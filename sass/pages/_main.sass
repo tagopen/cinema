@@ -1,5 +1,12 @@
 +comment('general style')
++font('Circe-Bold', 'Circe-Bold')
++font('Circe-ExtraBold', 'Circe-ExtraBold')
++font('Circe-ExtraLight', 'Circe-ExtraLight')
++font('Circe-Regular', 'Circe-Regular')
 +ic
+@each $ic in logo, subway_red, subway_orange
+  .ic-#{$ic}
+    +sb(#{$ic})
 +comment("home page style")
 html
   overflow-x: hidden
@@ -12,5 +19,48 @@ a:hover,
 a:focus
   color: inherit
   text-decoration: none
-  outline: none  
+  outline: none
 +comment("header style")
+.header
+  padding-top: 40px
+  &__navbar
+    margin-bottom: 40px
+  &__info
+    margin-bottom: 30px  
+  &__heading
+    font: 400 25px/28px $cb
+    color: #333
+    letter-spacing: 1px
+    margin: 0
+    span
+      font: 600 20px/24px $cel
+  &__price    
+    background-color: #ff781a
+    +br(23px)
+    text-align: center
+    padding: 10px 20px
+    width: 150px
+    float: right
+    color: #fff
+    font: 400 20px/22px $cb
+    text-transform: uppercase
+    margin-top: 15px
+.address
+  &__text
+    font: 400 14px/16px $os
+    color: #333
+    margin-bottom: 25px
+    span 
+      font: 400 17px/18px $os  
+      border-bottom: 2px dashed #333
+      margin-left: 5px
+  &__point
+    display: inline-block
+    background-color: #f3f3f3
+    +br(4px)
+    padding: 5px 12px 5px 5px
+    font: 400 14px/16px $cb
+    color: #282828 
+    margin-right: 15px
+    .ic
+      margin-right: 9px
