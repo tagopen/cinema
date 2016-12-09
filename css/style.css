@@ -594,13 +594,14 @@ a:focus {
   margin-bottom: 30px;
 }
 .header__heading {
-  font: 400 25px/28px "Circe-Bold", sans-serif;
+  font: 400 34px/36px "Circe-Bold", sans-serif;
   color: #333;
   letter-spacing: 1px;
   margin: 0;
 }
 .header__heading span {
-  font: 600 20px/24px "Circe-ExtraLight", sans-serif;
+  font: 600 34px/34px "Circe-ExtraLight", sans-serif;
+  margin-right: 15px;
 }
 .header__heading span:before {
   display: inline-block;
@@ -677,7 +678,7 @@ a:focus {
   font: 400 24px/26px "Open Sans", sans-serif;
   margin: 0 0 30px;
 }
-.contact__heading:before {
+.contact__heading--line:before {
   display: inline-block;
   content: "";
   margin: 0 5px 0 -7px;
@@ -705,23 +706,64 @@ a:focus {
   color: #006fec;
   text-decoration: underline;
 }
+.contact__link {
+  display: inline-block;
+  margin-top: 20px;
+  font: 400 14px/16px "Open Sans", sans-serif;
+  color: #006fec;
+  text-decoration: underline;
+}
 
 .gallery {
   margin-bottom: 15px;
 }
 
-@media only screen and (min-width: 768px) {
-  /* ---------------------------------------- */
-  /* G E N E R A L    S T Y L E               */
-  /* ---------------------------------------- */
-  /* ---------------------------------------- */
-  /* H E A D E R    S T Y L E                 */
-  /* ---------------------------------------- */
-  .header__heading {
-    font: 400 34px/36px "Circe-Bold", sans-serif;
-  }
-  .header__heading span {
-    font: 600 34px/34px "Circe-ExtraLight", sans-serif;
-    margin-right: 15px;
-  }
+/* ---------------------------------------- */
+/* S O O N    S T Y L E                     */
+/* ---------------------------------------- */
+.soon__row {
+  margin-bottom: 20px;
+}
+.soon__img {
+  margin-bottom: 10px;
+}
+.soon__naming {
+  margin-bottom: 15px;
+}
+.soon__link {
+  background-color: #00acdc;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------- */
+/* F O O T E R    S T Y L E                 */
+/* ---------------------------------------- */
+.footer {
+  padding: 80px 0;
+}
+.footer__heading {
+  font: 400 14px/16px "Open Sans", sans-serif;
+  color: #333;
+  margin-bottom: 15px;
+}
+.footer__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+.footer__item {
+  font: 400 14px/16px "Open Sans", sans-serif;
+  color: #666;
+  margin-bottom: 8px;
+}
+.footer__copy {
+  padding-top: 40px;
+  font: 400 14px/16px "Open Sans", sans-serif;
+  color: #666;
+}
+.footer__copy a {
+  color: #00acdc;
 }

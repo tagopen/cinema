@@ -30,12 +30,13 @@ a:focus
   &__info
     margin-bottom: 30px  
   &__heading
-    font: 400 25px/28px $cb
+    font: 400 34px/36px $cb
     color: #333
     letter-spacing: 1px
     margin: 0
     span
-      font: 600 20px/24px $cel
+      font: 600 34px/34px $cel
+      margin-right: 15px
       &:before
         display: inline-block
         content: ''
@@ -90,13 +91,14 @@ a:focus
     color: #333
     font: 400 24px/26px $os
     margin: 0 0 30px
-    &:before
-      display: inline-block
-      content: ''
-      margin: 0 5px 0 -7px
-      width: 2px
-      height: 18px
-      background-color: #ff781a
+    &--line
+      &:before
+        display: inline-block
+        content: ''
+        margin: 0 5px 0 -7px
+        width: 2px
+        height: 18px
+        background-color: #ff781a
   &__row
     margin-bottom: 15px
   &__point
@@ -113,5 +115,46 @@ a:focus
     span
       color: #006fec
       text-decoration: underline
+  &__link
+    display: inline-block
+    margin-top: 20px
+    font: 400 14px/16px $os
+    color: #006fec
+    text-decoration: underline   
 .gallery
-  margin-bottom: 15px      
+  margin-bottom: 15px  
++comment("soon style")   
+.soon
+  &__row
+    margin-bottom: 20px
+  &__img
+    margin-bottom: 10px
+  &__naming
+    margin-bottom: 15px
+  &__link
+    background-color: #00acdc  
+    color: #fff
+    display: inline-block
+    width: 100%
+    text-align: center
+    text-transform: uppercase
++comment("footer style")    
+.footer
+  padding: 80px 0
+  &__heading
+    font: 400 14px/16px $os
+    color: #333
+    margin-bottom: 15px
+  &__list
+    padding-left: 0
+    list-style-type: none 
+  &__item  
+    font: 400 14px/16px $os
+    color: #666
+    margin-bottom: 8px
+  &__copy
+    padding-top: 40px  
+    font: 400 14px/16px $os
+    color: #666
+    a
+      color: #00acdc

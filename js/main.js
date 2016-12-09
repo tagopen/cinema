@@ -20,21 +20,28 @@ $(function() {
 
 
 // Equal Height function
-function setEqualHeight(columns)
-{
-	var tallestcolumn = 0;
-	columns.each(
-		function()
-		{
-			currentHeight = $(this).height();
-			if(currentHeight > tallestcolumn)
-			{
-				tallestcolumn = currentHeight;
-			}
-		}
-		);
-	columns.height(tallestcolumn);
-}
+$.fn.equialHeight = function() {
+  var $tallestcolumn = 0;
+  var $currentHeight = 0;
+  $.each($(this), function (index, value) {
+    $currentHeight = $(this).height();
+    if($currentHeight > $tallestcolumn)
+    {
+      $tallestcolumn = $currentHeight;
+    }
+  });
+  $(this).height($tallestcolumn);
+  return $(this);
+} 
+
+$(window).on('resize', function(){
+  if( $( window ).width() >= 768 ) {
+    $('.soon__box').equialHeight();
+    $('.soon__naming').equialHeight();
+    $('.footer__heading').equialHeight();
+  }
+
+}).trigger('resize');
 
 
 $(document).ready(function() { 
