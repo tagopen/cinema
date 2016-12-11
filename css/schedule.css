@@ -1,0 +1,149 @@
+body {
+	/*background-image:url("https://kassa.rambler.ru/s/StaticContent/promo/illusion/images/trace.png")!important;
+	background-position: 50% 0!important;
+	background-repeat: no-repeat!important;
+	background-size: 1366px!important;*/
+}
+section#schedule {
+	position: relative;
+}
+.sh_block {
+	min-height: 200px;
+	width: 1030px;
+	margin: 0 auto;
+}
+h2.mb_title {
+	font-size: 24px;
+	font-weight: normal;
+	width: 50%;
+	position: absolute;
+	top: -94px;
+	left: 20px;
+}
+.rasp_h {
+	position: absolute;
+	left: 50%;
+	top: -99px;
+}
+li.btn_rasp_static {
+	display: inline-block;
+	font-size: 15px;
+	font-family: helvetica, arial;
+	color: #003CFF;
+	border: 1px solid;
+	border-radius: 18px;
+	margin: 0 2px 4px;
+	height: 34.2px;
+	width: 77px;
+	line-height: 36px;
+	text-align: center;
+	font-weight: bold;
+}
+li.btn_rasp_static:hover {
+	background: #003CFF;
+	color: #fff;
+	border-color: #003CFF;
+}
+.rasp_title {
+	font-size: 22px;
+	font-weight: normal;
+	color: #000;
+	line-height: 22px;
+}
+.rasp_place {
+	color:#28292C;
+	font-size: 13px;
+	line-height: 13px;
+}
+.rasp_title a {
+	color: #000;
+	text-decoration: none;
+}
+.rasp_items {
+	border: none;
+	padding-top: 25px;
+}
+.rasp_type:first-child {
+	padding-top:0;
+}
+.rasp_item {
+	border: none;
+	background: none;
+}
+.rasp_item:hover {
+	background: none;
+}
+li.date_item,
+li.date_item:hover {
+	background: transparent;
+}
+.rasp_h {
+	border: none;
+	margin: 0;
+}
+a.date_link {
+	background: none;
+	height: auto;
+	width: auto;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+}
+a.date_link time.date_item__time {
+	color: #003CFF;
+	font-size: 14px;
+	font-weight: 600;
+	padding: 0 20px;
+	border-radius: 18px;
+	border: 1px solid transparent;
+	display: inline-block;
+	height: 34px;
+	line-height: 34px;
+}
+a.date_link time.date_item__time:hover {
+	background: transparent;
+	color: #003CFF;
+	border-color: #003CFF
+}
+a.date_link .date_item__day {
+	text-align: center;
+	color: #7A7F90;
+	font-size: 10px;
+}
+li.date_item.active a.date_link {
+	color: #fff;
+	background: transparent;
+	border: none;
+}
+.date_link:hover {
+	background: transparent;
+}
+a.date_link:before {
+	display: none;
+}
+li.date_item.active a.date_link time.date_item__time {
+	color: #fff;
+	background: #003CFF;
+	border-color: #003CFF;
+}
+.rasp_hover {
+	opacity: 0.5;
+}
+.rasp_item_in {
+	padding-left: 0;
+	padding-right: 0;
+}
+.rasp_item.active .rasp_place, .rasp_item:hover .rasp_place {
+	color:#28292C!important;
+}
+.date_item:nth-child(-n+5) {
+	display: inline-block;
+	float: none;
+	text-align: center;
+}
+.date_calendar {
+	display: none!important;
+}
+ul.date_list.cf {
+	text-align: right;
+}

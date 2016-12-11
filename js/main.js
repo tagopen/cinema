@@ -37,6 +37,7 @@ $.fn.equialHeight = function() {
 $(window).on('resize', function(){
   if( $( window ).width() >= 768 ) {
     $('.soon__box').equialHeight();
+    $('.soon__box img').equialHeight();
     $('.soon__naming').equialHeight();
     $('.footer__heading').equialHeight();
   }
@@ -47,3 +48,15 @@ $(window).on('resize', function(){
 $(document).ready(function() { 
   $("a.fancyimage").fancybox(); 
 }); 
+
+$('.gallery__slider').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: false,
+  arrows: true,
+  centerPadding: '10',
+  centerMode: true,
+  focusOnSelect: true,
+  prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="ic ic-sliderleft"></button>',
+  nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="ic ic-sliderright"></button>'
+});

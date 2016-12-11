@@ -43,6 +43,7 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Fancybox CSS -->
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/schedule.css">
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="css/style.css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -54,7 +55,7 @@
   </head>
   <body>
     <div class="wrapper">
-    <div class="container-fluid">
+      <div class="container-fluid">
         <div class="row">
 
           <article class="col-xs-12 col-sm-9 content">
@@ -62,17 +63,25 @@
             <div class="header">
               <nav class="navbar header__navbar">
                 <div class="row">
-                  <div class="col-xs-6 col-sm-push-4 col-sm-4 navbar__logo">
+                  <div class="col-xs-6 col-sm-4 navbar__logo">
                     <a href="">
-                      <img src="img/logo/logo2.png" alt="" class="hidden-xs">
-                      <img src="img/logo/logo2-320.png" alt="" class="visible-xs">
+                      <img src="img/logo/logo.png" alt="">
                     </a>
                   </div>
-                  <div class="col-xs-6 col-sm-pull-4 col-sm-4 navbar__logo">
+                  <div class="col-xs-6 col-sm-4 navbar__logo">
                     <a href="">
-                      <img src="img/logo/logo.png" alt="" class="hidden-xs">
-                      <img src="img/logo/logo320.png" alt="" class="visible-xs">
+                      <img src="img/logo/logo2.png" alt="">
                     </a>
+                  </div>
+                  <div class="pull-right header__city city">
+                    <div class="btn-group">
+                      <button class="btn header__btn dropdown-toggle" data-toggle="dropdown">Москва<span class="caret"></span></button>
+                      <ul class="dropdown-menu header__dropdown">
+                        <li><a href="#">Действие</a></li>
+                        <li><a href="#">Другое действие</a></li>
+                        <li><a href="#">Еще и еще</a></li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </nav>
@@ -191,8 +200,11 @@
                     </div>
                   </div> 
                 </div>
+
+
                 <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-4 contact__point"><p>Как проехать</p></div>
+                  <div class="col-xs-12 col-sm-4 contact__point"><p>Как проехать</p>
+                  <a data-target="#map__modal" data-toggle="modal"><img src="img/map.jpg" alt="" class="img-responsive"></a></div>
                   <div class="col-xs-12 col-sm-4 contact__point"><p>Ближайшее метро</p><div class="contact__text">м. Проспект Вернадского</div><div class="contact__text">м. Юго-западная</div><div class="contact__text">м. Калужская</div></div>
                   <div class="col-xs-12 col-sm-4 contact__point"><p>Парковка</p><div class="contact__text">Есть</div></div>
                 </div>
@@ -228,113 +240,128 @@
                     <div class="col-xs-12 col-sm-9 contact__text">Банковской картой</div>
                   </div>
                 </div>
-              <div class="soon">
-                <h2 class="hidden-xs contact__heading">Скоро в кино</h2>
-                <div class="row">
-                  <div class="col-sm-2 soon__row">
-                    <div class="soon__box">
-                      <a href=""><img src="img/soon1.jpg" alt="" class="img-responsive soon__img"></a>
-                      <div class="soon__naming">Ледокол</div>
-                      <a href="" class="soon__link">Купить билеты</a>
+                <div class="soon">
+                  <h2 class="hidden-xs contact__heading">Скоро в кино</h2>
+                  <div class="row">
+                    <div class="col-sm-2 soon__row">
+                      <div class="soon__box">
+                        <a href=""><img src="img/soon1.jpg" alt="" class="img-responsive soon__img"></a>
+                        <div class="soon__naming">Ледокол</div>
+                        <a href="" class="soon__link">Купить билеты</a>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 soon__row">
+                      <div class="soon__box">
+                        <a href=""><img src="img/soon2.jpg" alt="" class="img-responsive soon__img"></a>
+                        <div class="soon__naming">Это всего лишь конец света</div>
+                        <a href="" class="soon__link">Купить билеты</a>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 soon__row">
+                      <div class="soon__box">
+                        <a href=""><img src="img/soon3.jpg" alt="" class="img-responsive soon__img"></a>
+                        <div class="soon__naming">Доктор Стрэндж</div>
+                        <a href="" class="soon__link">Купить билеты</a>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 soon__row">
+                      <div class="soon__box">
+                        <a href=""><img src="img/soon4.jpg" alt="" class="img-responsive soon__img"></a>
+                        <div class="soon__naming">Джек Ричер-2: Никогда не возвращайся</div>
+                        <a href="" class="soon__link">Купить билеты</a>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 soon__row">
+                      <div class="soon__box">
+                        <a href=""><img src="img/soon5.jpg" alt="" class="img-responsive soon__img"></a>
+                        <div class="soon__naming">В постели с Викторией</div>
+                        <a href="" class="soon__link">Купить билеты</a>
+                      </div>
+                    </div>
+                    <div class="col-sm-2 soon__row">
+                      <div class="soon__box">
+                        <a href=""><img src="img/soon6.jpg" alt="" class="img-responsive soon__img"></a>
+                        <div class="soon__naming">Тролли</div>
+                        <a href="" class="soon__link">Купить билеты</a>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-sm-2 soon__row">
-                    <div class="soon__box">
-                      <a href=""><img src="img/soon2.jpg" alt="" class="img-responsive soon__img"></a>
-                      <div class="soon__naming">Это всего лишь конец света</div>
-                      <a href="" class="soon__link">Купить билеты</a>
+                  <div class="row contact__row">
+                    <div class="col-xs-12 col-sm-3 contact__point"><p>Кинотеатры рядом</p></div>
+                    <div class="col-xs-12 col-sm-9 contact__text">Найдите кинотеатры рядом с вами.<br>Для этого нужно разрешить браузеру определить ваше местоположение.
+                      <a href="" class="contact__link">Определить местоположение</a></div>
                     </div>
                   </div>
-                  <div class="col-sm-2 soon__row">
-                    <div class="soon__box">
-                      <a href=""><img src="img/soon3.jpg" alt="" class="img-responsive soon__img"></a>
-                      <div class="soon__naming">Доктор Стрэндж</div>
-                      <a href="" class="soon__link">Купить билеты</a>
+
+                  <footer class="footer">
+                    <div class="row">
+                      <div class="col-sm-3">
+                        <div class="footer__heading">О кассе</div>
+                        <ul class="footer__list">
+                          <li class="footer__item"><a href="" class="footer__link">О проекте "Касса"</a></li>
+                          <li class="footer__item"><a href="" class="footer__link">Обратная связь</a></li>
+                          <li class="footer__item"><a href="" class="footer__link">Помощь</a></li>
+                          <li class="footer__item"><a href="" class="footer__link">Пользовательское соглашение</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="footer__heading">Дополнительная информация</div>
+                        <ul class="footer__list">
+                          <li class="footer__item"><a href="" class="footer__link">Возврат билетов</a></li>
+                          <li class="footer__item"><a href="" class="footer__link">Отписаться от рассылки</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="footer__heading">Мобильная касса</div>
+                        <ul class="footer__list">
+                          <li class="footer__item"><a href="" class="footer__link">Мобильная версия</a></li>
+                          <li class="footer__item"><a href="" class="footer__link">Приложение для iOS</a></li>
+                          <li class="footer__item"><a href="" class="footer__link">Приложение для Android</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-3">
+                        <div class="footer__heading">Партнерам</div>
+                        <ul class="footer__list">
+                          <li class="footer__item"><a href="" class="footer__link">Кинотеатрам</a></li>
+                          <li class="footer__item"><a href="" class="footer__link">Кинопрокатчикам</a></li>
+                          <li class="footer__item"><a href="" class="footer__link">Сайтам</a></li>
+                          <li class="footer__item"><a href="" class="footer__link">Наши партнеры</a></li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-12"><div class="footer__copy">Служба поддержки: +7 (495) 785-17-03, 8 800 700-29-03, <a href="mailto:kassa@rambler-co.ru">kassa@rambler-co.ru</a> © Рамблер, 2016</div></div>
                     </div>
-                  </div>
-                  <div class="col-sm-2 soon__row">
-                    <div class="soon__box">
-                      <a href=""><img src="img/soon4.jpg" alt="" class="img-responsive soon__img"></a>
-                      <div class="soon__naming">Джек Ричер-2: Никогда не возвращайся</div>
-                      <a href="" class="soon__link">Купить билеты</a>
-                    </div>
-                  </div>
-                  <div class="col-sm-2 soon__row">
-                    <div class="soon__box">
-                      <a href=""><img src="img/soon5.jpg" alt="" class="img-responsive soon__img"></a>
-                      <div class="soon__naming">В постели с Викторией</div>
-                      <a href="" class="soon__link">Купить билеты</a>
-                    </div>
-                  </div>
-                  <div class="col-sm-2 soon__row">
-                    <div class="soon__box">
-                      <a href=""><img src="img/soon6.jpg" alt="" class="img-responsive soon__img"></a>
-                      <div class="soon__naming">Тролли</div>
-                      <a href="" class="soon__link">Купить билеты</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-3 contact__point"><p>Кинотеатры рядом</p></div>
-                  <div class="col-xs-12 col-sm-9 contact__text">Найдите кинотеатры рядом с вами.<br>Для этого нужно разрешить браузеру определить ваше местоположение.
-                  <a href="" class="contact__link">Определить местоположение</a></div>
-                </div>
+                  </footer>
+
+                </article>
+
+
+                <asside class="col-sm-3 sidebar">
+                 
+                </asside>
+
+
               </div>
-
-           <footer class="footer">
-             <div class="row">
-               <div class="col-sm-3">
-                <div class="footer__heading">О кассе</div>
-                 <ul class="footer__list">
-                   <li class="footer__item"><a href="" class="footer__link">О проекте "Касса"</a></li>
-                   <li class="footer__item"><a href="" class="footer__link">Обратная связь</a></li>
-                   <li class="footer__item"><a href="" class="footer__link">Помощь</a></li>
-                   <li class="footer__item"><a href="" class="footer__link">Пользовательское соглашение</a></li>
-                 </ul>
-               </div>
-               <div class="col-sm-3">
-                <div class="footer__heading">Дополнительная информация</div>
-                 <ul class="footer__list">
-                   <li class="footer__item"><a href="" class="footer__link">Возврат билетов</a></li>
-                   <li class="footer__item"><a href="" class="footer__link">Отписаться от рассылки</a></li>
-                 </ul>
-               </div>
-               <div class="col-sm-3">
-                <div class="footer__heading">Мобильная касса</div>
-                <ul class="footer__list">
-                   <li class="footer__item"><a href="" class="footer__link">Мобильная версия</a></li>
-                   <li class="footer__item"><a href="" class="footer__link">Приложение для iOS</a></li>
-                   <li class="footer__item"><a href="" class="footer__link">Приложение для Android</a></li>
-                 </ul>
-               </div>
-               <div class="col-sm-3">
-                <div class="footer__heading">Партнерам</div>
-                 <ul class="footer__list">
-                   <li class="footer__item"><a href="" class="footer__link">Кинотеатрам</a></li>
-                   <li class="footer__item"><a href="" class="footer__link">Кинопрокатчикам</a></li>
-                   <li class="footer__item"><a href="" class="footer__link">Сайтам</a></li>
-                   <li class="footer__item"><a href="" class="footer__link">Наши партнеры</a></li>
-                 </ul>
-               </div>
-               <div class="col-sm-12"><div class="footer__copy">Служба поддержки: +7 (495) 785-17-03, 8 800 700-29-03, <a href="mailto:kassa@rambler-co.ru">kassa@rambler-co.ru</a> © Рамблер, 2016</div></div>
-             </div>
-           </footer>
-
-            </article>
+            </div>
+            
 
 
-
-        </div>
-      </div>
-
-    
-
-    </div>
+          </div>
     
 
    
 
-    
+     <div class="modal fade" id="map__modal" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal__size">
+
+          <div class="modal-content modal__content">
+
+              <button type="button" class="close modal__close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+
+
+            </div>
+          </div>
+        </div>
 
 
   <!-- jQuery -->
@@ -354,6 +381,9 @@
   <!-- Fancybox Gallery -->
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.fancybox.pack.min.js"></script>
+
+  <script src="js/TicketManager.js"></script>
+  <script src="js/schedule.js"></script>
 
   <!-- Slick-Slider JavaScript -->
   <script src="js/slick.js"></script>

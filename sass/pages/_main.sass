@@ -4,7 +4,7 @@
 +font('Circe-ExtraLight', 'Circe-ExtraLight')
 +font('Circe-Regular', 'Circe-Regular')
 +ic
-@each $ic in logo, subway_red, subway_orange, adv1, adv2, adv3, adv4, adv5, adv6
+@each $ic in logo, subway_red, subway_orange, adv1, adv2, adv3, adv4, adv5, adv6, sliderright, sliderleft
   .ic-#{$ic}
     +sb(#{$ic})
 +comment("home page style")
@@ -28,7 +28,24 @@ a:focus
   &__navbar
     margin-bottom: 40px
   &__info
-    margin-bottom: 30px  
+    margin-bottom: 30px 
+  &__btn
+    padding: 15px 20px
+    width: 130px  
+    +br(0)
+    background-color: transparent
+    border: 1px solid #c2c2c2
+    span
+      margin-left: 25px !important
+  &__dropdown  
+    padding-top: 0
+    padding-bottom: 0
+    margin: 0
+    +br(0)
+    li
+      a
+        &:hover
+          background-color: #ff781a
   &__heading
     font: 400 34px/36px $cb
     color: #333
@@ -79,7 +96,7 @@ a:focus
 .advantages
   background-color: #f1f1f1
   padding: 35px 0   
-  margin: 0 -30px 40px -45px
+  margin: 0 -15px 40px -45px
   &__point
     text-align: center 
     font: 400 12px/14px $os
@@ -140,7 +157,7 @@ a:focus
     text-transform: uppercase
 +comment("footer style")    
 .footer
-  padding: 80px 0
+  padding: 120px 0
   &__heading
     font: 400 14px/16px $os
     color: #333
