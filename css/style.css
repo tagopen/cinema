@@ -593,6 +593,13 @@ a:focus {
   padding-left: 45px;
 }
 
+.modal__map .modal__close {
+  opacity: 1;
+  position: absolute;
+  right: -25px;
+  top: -25px;
+}
+
 /* ---------------------------------------- */
 /* H E A D E R    S T Y L E                 */
 /* ---------------------------------------- */
@@ -710,6 +717,9 @@ a:focus {
 /* ---------------------------------------- */
 /* C O N T A C T    S T Y L E               */
 /* ---------------------------------------- */
+.contact {
+  padding-top: 15px;
+}
 .contact__heading {
   color: #333;
   font: 400 24px/26px "Open Sans", sans-serif;
@@ -748,6 +758,15 @@ a:focus {
   margin-top: 20px;
   font: 400 14px/16px "Open Sans", sans-serif;
   color: #006fec;
+  text-decoration: underline;
+}
+
+.net__row {
+  margin-bottom: 40px;
+}
+.net__text {
+  color: #ed812b;
+  font: 400 14px/16px "Open Sans", sans-serif;
   text-decoration: underline;
 }
 
@@ -842,6 +861,39 @@ a:focus {
     transform: none;
   }
 
+  /* ---------------------------------------- */
+  /* L I N K S    S T Y L E                   */
+  /* ---------------------------------------- */
+  .links {
+    margin: 0 -15px;
+  }
+  .links ul {
+    display: table-row;
+  }
+  .links ul li {
+    width: auto;
+    display: table-cell;
+    text-align: center;
+    padding-left: 2px;
+    border-left: 1px solid #000;
+    vertical-align: bottom;
+    background-color: #282828;
+  }
+  .links ul li:hover a, .links ul li:focus a {
+    color: #d55b1f;
+  }
+  .links ul li:first-child {
+    padding: 0;
+    border: 0;
+  }
+  .links ul li a {
+    padding: 15px 0;
+    width: 1000px;
+    display: table-cell;
+    vertical-align: middle;
+    color: #fff;
+  }
+
   .contact {
     margin: 0 -15px;
     padding-left: 15px;
@@ -852,8 +904,12 @@ a:focus {
   /* ------------------------------------------ */
   /* G A L L E R Y    S L I D E R    S T Y L E  */
   /* ------------------------------------------ */
+  .slider__item {
+    text-align: center;
+  }
   .slider__item img {
     height: 224px;
+    display: inline-block;
   }
   .slider .slick-next, .slider .slick-prev {
     height: 30px;

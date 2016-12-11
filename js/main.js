@@ -1,3 +1,12 @@
+// Menu anchor scroll
+$(document).ready(function(){
+  $(".navbar").on("click",".page-scroll", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+    top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top -$('.navbar').outerHeight()}, 1500);
+  });
+});
 // Old browser notification
 $(function() { 
   $.reject({
@@ -17,8 +26,6 @@ $(function() {
     closeLink: 'Закрыть это уведомление',
   });
 });
-
-
 // Equal Height function
 $.fn.equialHeight = function() {
   var $tallestcolumn = 0;
@@ -43,7 +50,6 @@ $(window).on('resize', function(){
   }
 
 }).trigger('resize');
-
 
 $(document).ready(function() { 
   $("a.fancyimage").fancybox(); 

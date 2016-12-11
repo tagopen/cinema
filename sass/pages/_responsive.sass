@@ -21,7 +21,33 @@
     &__point
       text-align: left   
       .ic
-        transform: none 
+        transform: none  
+  +comment("links style")    
+  .links
+    margin: 0 -15px
+    ul
+      display: table-row
+      li
+        width: auto
+        display: table-cell
+        text-align: center
+        padding-left: 2px
+        border-left: 1px solid #000
+        vertical-align: bottom
+        background-color: #282828
+        &:hover,
+        &:focus
+          a
+            color: #d55b1f
+        &:first-child
+          padding: 0
+          border: 0
+        a
+          padding: 15px 0
+          width: 1000px
+          display: table-cell
+          vertical-align: middle
+          color: #fff      
   .contact
     margin: 0 -15px
     padding-left: 15px
@@ -30,8 +56,10 @@
   +comment("gallery slider style")      
   .slider
     &__item
+      text-align: center
       img
         height: 224px  
+        display: inline-block
     .slick
       &-next,
       &-prev

@@ -22,6 +22,13 @@ a:focus
   outline: none
 .content
   padding-left: 45px
+.modal
+  &__map
+    .modal__close
+      opacity: 1
+      position: absolute
+      right: -25px
+      top: -25px  
 +comment("header style")
 .header
   padding-top: 40px
@@ -104,6 +111,7 @@ a:focus
       transform: scale(0.5)
 +comment("contact style")
 .contact
+  padding-top: 15px
   &__heading
     color: #333
     font: 400 24px/26px $os
@@ -137,7 +145,14 @@ a:focus
     margin-top: 20px
     font: 400 14px/16px $os
     color: #006fec
-    text-decoration: underline   
+    text-decoration: underline  
+.net
+  &__row
+    margin-bottom: 40px
+  &__text
+    color: #ed812b
+    font: 400 14px/16px $os
+    text-decoration: underline
 .gallery
   margin-bottom: 15px  
 +comment("soon style")   
