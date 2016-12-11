@@ -121,10 +121,10 @@
             </div>
 
             <div class="links">
-              <ul class="">
-                <li><a href="#">Сеансы</a></li>
-                <li><a href="#">О кинотеатре</a></li>
-                <li><a href="#">На карте</a></li>
+              <ul>
+                <li class="links__item"><a href="#">Сеансы</a></li>
+                <li class="links__item"><a href="#about">О кинотеатре</a></li>
+                <li class="links__item"><a href="#way">На карте</a></li>
               </ul>
             </div>
 
@@ -173,8 +173,9 @@
                   </div>
                 </div>
                 <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-4 contact__point"><p>Как проехать</p></div>
-                  <div class="col-xs-6 contact__point"><p>Ближайшее метро</p><div class="contact__text">м. Проспект Вернадского</div><div class="contact__text">м. Юго-западная</div><div class="contact__text">м. Калужская</div></div>
+                  <div class="col-xs-12 col-sm-4 contact__point map__point" id="way"><p>Как проехать</p>
+                  <a data-target="#map__modal" data-toggle="modal"><img src="img/map.jpg" alt="" class="img-responsive"></a></div>
+                  <div class="col-xs-6 contact__point" id="about"><p>Ближайшее метро</p><div class="contact__text">м. Проспект Вернадского</div><div class="contact__text">м. Юго-западная</div><div class="contact__text">м. Калужская</div></div>
                   <div class="col-xs-6 contact__point"><p>Парковка</p><div class="contact__text">Есть</div></div>
                 </div>
                 <div class="row contact__row">
@@ -211,6 +212,18 @@
                   <div class="col-xs-12 col-sm-9 contact__text">Найдите кинотеатры рядом с вами.<br>Для этого нужно разрешить браузеру определить ваше местоположение.
                     <a href="" class="contact__link">Определить местоположение</a></div>
                   </div>
+
+                  <div class="row near__row">
+                  <div class="col-xs-12 near__point"><a href="">Пионер</a></div>
+                    <div class="col-xs-12 near__text">Найдите кинотеатры рядом с вами.<br>Для этого нужно разрешить браузеру определить ваше местоположение.
+                      </div>
+                    </div>
+                    <div class="row near__row">
+                  <div class="col-xs-12 near__point"><a href="">Пионер</a></div>
+                    <div class="col-xs-12 near__text">Найдите кинотеатры рядом с вами.<br>Для этого нужно разрешить браузеру определить ваше местоположение.
+                      </div>
+                    </div>
+
                      <footer class="footer">
                     <div class="header__city city">
                       <div class="btn-group">
@@ -272,7 +285,18 @@
             
 
 
-        
+            <div class="modal fade" id="map__modal" tabindex="-1" role="dialog"  aria-hidden="true">
+        <div class="modal-dialog modal__size--mob">
+
+          <div class="modal-content modal__content modal__map">
+
+              <button type="button" class="close modal__close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+<iframe src="https://api-maps.yandex.ua/frame/v1/-/CZHAVQnM" height="400" frameborder="0"></iframe>
+
+
+            </div>
+          </div>
+        </div>
         
         
     

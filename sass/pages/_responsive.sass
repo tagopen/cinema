@@ -22,6 +22,9 @@
       text-align: left   
       .ic
         transform: none  
+  .map
+    &__point
+      margin-bottom: 20px      
   +comment("links style")    
   .links
     margin: 0 -15px
@@ -69,6 +72,18 @@
         &:before
           content: none
           line-height: normal 
+  +comment("near style")  
+  .near
+    &__row
+      margin-bottom: 25px
+    &__point
+      color: #3e6fe8   
+      font: 400 18px/20px $os
+      text-decoration: underline
+      margin-bottom: 15px 
+    &__text
+      color: #363636   
+      font: 400 14px/16px $os 
   +comment("footer style")      
   .footer
     background-color: #f7f7f7

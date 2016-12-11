@@ -1,10 +1,10 @@
 // Menu anchor scroll
 $(document).ready(function(){
-  $(".navbar").on("click",".page-scroll", function (event) {
+  $(".links").on("click",".links__item a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
     top = $(id).offset().top;
-    $('body,html').animate({scrollTop: top -$('.navbar').outerHeight()}, 1500);
+    $('body,html').animate({scrollTop: top -$('.navbar').outerHeight()+20}, 1500);
   });
 });
 // Old browser notification

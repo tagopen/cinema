@@ -593,6 +593,10 @@ a:focus {
   padding-left: 45px;
 }
 
+.modal__size--mob {
+  width: 300px;
+  margin: 30px auto 0;
+}
 .modal__map .modal__close {
   opacity: 1;
   position: absolute;
@@ -861,6 +865,10 @@ a:focus {
     transform: none;
   }
 
+  .map__point {
+    margin-bottom: 20px;
+  }
+
   /* ---------------------------------------- */
   /* L I N K S    S T Y L E                   */
   /* ---------------------------------------- */
@@ -919,6 +927,23 @@ a:focus {
   .slider .slick-next:before, .slider .slick-prev:before {
     content: none;
     line-height: normal;
+  }
+
+  /* ---------------------------------------- */
+  /* N E A R    S T Y L E                     */
+  /* ---------------------------------------- */
+  .near__row {
+    margin-bottom: 25px;
+  }
+  .near__point {
+    color: #3e6fe8;
+    font: 400 18px/20px "Open Sans", sans-serif;
+    text-decoration: underline;
+    margin-bottom: 15px;
+  }
+  .near__text {
+    color: #363636;
+    font: 400 14px/16px "Open Sans", sans-serif;
   }
 
   /* ---------------------------------------- */
