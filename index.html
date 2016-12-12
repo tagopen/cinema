@@ -11,8 +11,6 @@
 
     <!-- Multilanguage localization -->
     <link rel="alternate" href="/" hreflang="x-default" />
-    <link rel="alternate" href="/en/" hreflang="en" />
-    <link rel="alternate" href="/ru/" hreflang="ru" />
 
     <!-- Mobile viewport optimization -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,11 +27,10 @@
     <meta name="format-detection" content="address=no"/>
 
     <!-- Microformats Open Graph -->
-    <meta property="og:title" content="Ваше Право"/>
+    <meta property="og:title" content="Синема стар"/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="img/logo/logo.png"/>
     <meta property="og:url" content="http://url.com"/>
-
    
     <!-- Open Sans  -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic" rel="stylesheet">
@@ -58,18 +55,18 @@
       <div class="container-fluid">
         <div class="row">
 
-          <article class="col-xs-12 col-sm-9 content">
-            <!--     HEADER   BEGIN    -->
-            <div class="header">
+          <article class="col-sm-9 content">
+            <header class="header">
+
               <nav class="navbar header__navbar">
                 <div class="row">
-                  <div class="col-xs-6 col-sm-4 navbar__logo">
-                    <a href="">
+                  <div class="col-sm-4 navbar__logo">
+                    <a href="#">
                       <img src="img/logo/logo.png" alt="">
                     </a>
                   </div>
-                  <div class="col-xs-6 col-sm-4 navbar__logo">
-                    <a href="">
+                  <div class="col-sm-4 navbar__logo">
+                    <a href="#">
                       <img src="img/logo/logo2.png" alt="">
                     </a>
                   </div>
@@ -83,337 +80,318 @@
                       </ul>
                     </div>
                   </div>
-                </div>
-              </nav>
-              <div class="header__info">
+                </div><!-- /.row -->
+              </nav><!-- /.navbar -->
+
+              <div class="header__info info">
                 <div class="row">
-                  <div class="col-xs-12 col-sm-8 col-md-7">
+                  <div class="col-sm-8 col-md-7">
                     <h1 class="header__heading"><span>Кинотеатр</span> Синема Стар Рио на Ленинском</h1>
                   </div>
-                  <div class="hidden-xs">
-                    <div class="header__price">150-1000 Р</div>
-                  </div>
+                  <div class="header__price">150-1000 Р</div>
                 </div>
-              </div>
+              </div><!-- /.info -->
+
               <div class="header__address address">
                 <div class="row">
-                  <div class="col-xs-12 col-sm-9">
+                  <div class="col-sm-9">
                     <div class="address__text">
                       Адрес: <span>Ленинский просп., вл. 109, ТРЦ «Рио»</span>
                     </div>
-                    <div class="address__point"><i class="ic ic-subway_red"></i>Проспект Вернадского</div>
-                    <div class="address__point"><i class="ic ic-subway_red"></i>Юго Западная</div>
-                    <div class="address__point"><i class="ic ic-subway_orange"></i>Калужская</div>
+                    <div class="address__point"><i class="ic ic-subway_red address__icon"></i>Проспект Вернадского</div>
+                    <div class="address__point"><i class="ic ic-subway_red address__icon"></i>Юго Западная</div>
+                    <div class="address__point"><i class="ic ic-subway_orange address__icon"></i>Калужская</div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </div><!-- /.address -->
+            </header><!-- /.header -->
+
             <div class="advantages">
               <div class="row">
-                <div class="col-xs-6 col-sm-4 col-md-2">
+                <div class="col-sm-4 col-md-2">
                   <div class="advantages__point"><i class="ic ic-adv1 advantages__icon"></i>3D-проектор</div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-2">
+                <div class="col-sm-4 col-md-2">
                   <div class="advantages__point"><i class="ic ic-adv2 advantages__icon"></i>Звук Dolby Atmos</div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-2">
+                <div class="col-sm-4 col-md-2">
                   <div class="advantages__point"><i class="ic ic-adv3 advantages__icon"></i>VIP-зал</div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-2">
+                <div class="col-sm-4 col-md-2">
                   <div class="advantages__point"><i class="ic ic-adv4 advantages__icon"></i>Кинобар</div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-2">
+                <div class="col-sm-4 col-md-2">
                   <div class="advantages__point"><i class="ic ic-adv5 advantages__icon"></i>Игровая зона</div>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-2">
+                <div class="col-sm-4 col-md-2">
                   <div class="advantages__point"><i class="ic ic-adv6 advantages__icon"></i>Парковка</div>
                 </div>
               </div>
-            </div>
+            </div><!-- /.advantages -->
+
             <div class="contact">
-              <h2 class="hidden-xs contact__heading contact__heading--line">Контакты</h2>
+              <h2 class="contact__heading contact__heading--line">Контакты</h2>
               <div class="row contact__row">
-                <div class="col-xs-12 col-sm-3 contact__point"><p>Адрес</p>
+                <div class="col-sm-3 contact__point"><p>Адрес</p>
                 </div>
-                <div class="col-xs-12 col-sm-9 contact__text">г. Москва > <a class="contact__link" href="#">м. Проспект Вернадского</a> > <a class="contact__link" href="#">м. Юго-западная</a> > <a class="contact__link" href="#">м. Калужская</a> > <a class="contact__link" href="#">Ленинский просп., вл. 109</a> > <a class="contact__link" href="#">ТРЦ «Рио»</a>
+                <div class="col-sm-9 contact__text">г. Москва > <a class="contact__link" href="#">м. Проспект Вернадского</a> > <a class="contact__link" href="#">м. Юго-западная</a> > <a class="contact__link" href="#">м. Калужская</a> > <a class="contact__link" href="#">Ленинский просп., вл. 109</a> > <a class="contact__link" href="#">ТРЦ «Рио»</a>
                 </div>
-              </div>
+              </div><!-- /.contact__row -->
+
               <div class="row contact__row">
-                <div class="col-xs-12 col-sm-3 contact__point"><p>Геокоординаты</p></div>
-                <div class="col-xs-12 col-sm-9 contact__text">55.6638074<br>
+                <div class="col-sm-3 contact__point"><p>Геокоординаты</p></div>
+                <div class="col-sm-9 contact__text">55.6638074<br>
                   37.5113046</div>
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-3 contact__point"><p>Местоположение</p></div>
-                  <div class="col-xs-12 col-sm-9 contact__text">Находится в <span>ТРЦ «Рио»</span></div>
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-3 contact__point"><p>Развлечения</p></div>
-                  <div class="col-xs-12 col-sm-9 contact__text">Все 8 залов кинотеатра оснащены новейшим цифровым оборудованием. 3 больших зала, поддерживающие уже давно полюбившийся зрителям формат 3D, рассчитаны на 217 мест каждый. А каждый из 4 залов поменьше – на 144 места. Также в кинотеатре есть VIP зал, рассчитанный на 50 мест. В новом кинотеатре «Синема Стар» имеются 3 кинобара и отдельное кафе в VIP зоне. Для удобства гостей с детьми на территории кинотеатра располагаются игровая комната и комната матери и ребенка.</div>
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-3 contact__point"><p>Вместительность</p></div>
-                  <div class="col-xs-12 col-sm-9 contact__text">8 залов : 1277 мест</div>
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 contact__point">
-                    <div class="gallery">
-                      <div class="row">
-                        <div class="col-sm-2">
-                          <div class="gallery__box">
-                            <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal1big.jpg">
-                              <img src="img/gal1.jpg" alt="" class="img-responsive">
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="gallery__box">
-                            <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal2big.jpg">
-                              <img src="img/gal2.jpg" alt="" class="img-responsive">
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="gallery__box">
-                            <div class="gallery__box">
-                              <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal3big.jpg">
-                                <img src="img/gal3.jpg" alt="" class="img-responsive">
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="gallery__box">
-                            <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal1big.jpg">
-                              <img src="img/gal1.jpg" alt="" class="img-responsive">
-                            </a>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="gallery__box">
-                            <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal1big.jpg">
-                              <img src="img/gal1.jpg" alt="" class="img-responsive">
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div> 
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-3 contact__point"><p>Как проехать</p>
-                  <a data-target="#map__modal" data-toggle="modal"><img src="img/map.jpg" alt="" class="img-responsive"></a></div>
-                  <div class="col-xs-12 col-sm-3 contact__point"><p>Ближайшее метро</p><div class="contact__text">м. Проспект Вернадского</div><div class="contact__text">м. Юго-западная</div><div class="contact__text">м. Калужская</div></div>
-                  <div class="col-xs-12 col-sm-3 contact__point"><p>Парковка</p><div class="contact__text">Есть</div></div>
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-3 contact__point"><p>Телефон</p></div>
-                  <div class="col-xs-12 col-sm-9 contact__text">+7 (495) 980-44-15</div>
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-3 contact__point"><p>Официальный сайт</p></div>
-                  <div class="col-xs-12 col-sm-9 contact__text">www.cinemastar.ru</div>
-                </div>
-                <div class="row net__row">
-                  <div class="col-sm-9"><div class="rambler-share"></div></div>
-                  <div class="col-sm-3 text-right net__text"><a href="http://help.rambler.ru/feedback/kassa/">Нашли ошибку?</a></div>
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 contact__text"><p>Кинотеатр Синема Стар Рио на Ленинском проспекте расположен в торговом центре «Рио» вблизи станции метро Проспект Вернадского.</p><p>Для компании «Стар Рио» это 18 по счету мультиплекс. В нем имеется 8 залов, которые оснащены передовым цифровым оборудованием. В vip-зале создана камерная атмосфера уюта. Посетителей ждет кинопоказ повышенной комфортности: имеется бал, приветливые официанты принимают заказы. В фойе находятся три кино-бара, где можно купить различные закуски, напитки и десерты.</p><p>В кинотеатре Синема Стар Рио на Ленинском проспекте в Москве демонстрируются как популярные фильмы прошлых лет, так и современные киноленты в формате 2D и 3D. В репертуаре кинокартины на любой вкус: комедии, драмы, триллеры, мультипликация и т.д.</p><p>На сайте Киноафиша можно купить билеты в кинотеатр «Синема Стар Рио на Ленинском проспекте» онлайн. Способы online оплаты билетов — различные. Бронируйте билеты в кино на любой сеанс, не выходя из дома. </p></div>
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-3 contact__point"><p>Часы работы</p></div>
-                  <div class="col-xs-12 col-sm-9 contact__text">10:00 - 02:00</div>
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-3 contact__point"><p>Ночные сеансы</p></div>
-                  <div class="col-xs-12 col-sm-9 contact__text">Есть</div>
-                </div>
-                <div class="row contact__row">
-                  <div class="col-xs-12 col-sm-3 contact__point">
-                    <p>Цена билета в кино:<br>VIP:<br>Atmos:</p>
-                  </div>
-                  <div class="col-xs-12 col-sm-9 contact__text">150-400 рублей<br>
-                    300-1000 рублей<br>
-                    150-530 рублей</div>
-                  </div>
-                  <div class="row contact__row">
-                    <div class="col-xs-12 col-sm-3 contact__point"><p>Варианты оплаты</p></div>
-                    <div class="col-xs-12 col-sm-9 contact__text">Банковской картой</div>
-                  </div>
-                </div>
-                <div class="soon">
-                  <h2 class="hidden-xs contact__heading">Скоро в кино</h2>
-                  <div class="row">
-                    <div class="col-sm-2 soon__row">
-                      <div class="soon__box">
-                        <a href=""><img src="img/soon1.jpg" alt="" class="img-responsive soon__img"></a>
-                        <div class="soon__naming">Ледокол</div>
-                        <a href="" class="soon__link">Купить билеты</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-2 soon__row">
-                      <div class="soon__box">
-                        <a href=""><img src="img/soon2.jpg" alt="" class="img-responsive soon__img"></a>
-                        <div class="soon__naming">Это всего лишь конец света</div>
-                        <a href="" class="soon__link">Купить билеты</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-2 soon__row">
-                      <div class="soon__box">
-                        <a href=""><img src="img/soon3.jpg" alt="" class="img-responsive soon__img"></a>
-                        <div class="soon__naming">Доктор Стрэндж</div>
-                        <a href="" class="soon__link">Купить билеты</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-2 soon__row">
-                      <div class="soon__box">
-                        <a href=""><img src="img/soon4.jpg" alt="" class="img-responsive soon__img"></a>
-                        <div class="soon__naming">Джек Ричер-2: Никогда не возвращайся</div>
-                        <a href="" class="soon__link">Купить билеты</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-2 soon__row">
-                      <div class="soon__box">
-                        <a href=""><img src="img/soon5.jpg" alt="" class="img-responsive soon__img"></a>
-                        <div class="soon__naming">В постели с Викторией</div>
-                        <a href="" class="soon__link">Купить билеты</a>
-                      </div>
-                    </div>
-                    <div class="col-sm-2 soon__row">
-                      <div class="soon__box">
-                        <a href=""><img src="img/soon6.jpg" alt="" class="img-responsive soon__img"></a>
-                        <div class="soon__naming">Тролли</div>
-                        <a href="" class="soon__link">Купить билеты</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row contact__row">
-                    <div class="col-xs-12 col-sm-3 contact__point"><p>Кинотеатры рядом</p></div>
-                    <div class="col-xs-12 col-sm-9 contact__text">Найдите кинотеатры рядом с вами.<br>Для этого нужно разрешить браузеру определить ваше местоположение.
-                      <a href="" class="contact__link">Определить местоположение</a></div>
-                    </div>
-                  </div>
+              </div><!-- /.contact__row -->
 
-                  <footer class="footer">
+              <div class="row contact__row">
+                <div class="col-sm-3 contact__point"><p>Местоположение</p></div>
+                <div class="col-sm-9 contact__text">Находится в <span>ТРЦ «Рио»</span></div>
+              </div><!-- /.contact__row -->
+
+              <div class="row contact__row">
+                <div class="col-sm-3 contact__point"><p>Развлечения</p></div>
+                <div class="col-sm-9 contact__text">Все 8 залов кинотеатра оснащены новейшим цифровым оборудованием. 3 больших зала, поддерживающие уже давно полюбившийся зрителям формат 3D, рассчитаны на 217 мест каждый. А каждый из 4 залов поменьше – на 144 места. Также в кинотеатре есть VIP зал, рассчитанный на 50 мест. В новом кинотеатре «Синема Стар» имеются 3 кинобара и отдельное кафе в VIP зоне. Для удобства гостей с детьми на территории кинотеатра располагаются игровая комната и комната матери и ребенка.</div>
+              </div><!-- /.contact__row -->
+
+              <div class="row contact__row">
+                <div class="col-sm-3 contact__point"><p>Вместительность</p></div>
+                <div class="col-sm-9 contact__text">8 залов : 1277 мест</div>
+              </div><!-- /.contact__row -->
+
+              <div class="row contact__row">
+                <div class="contact__point">
+                  <div class="gallery">
                     <div class="row">
-                      <div class="col-sm-3">
-                        <div class="footer__heading">О кассе</div>
-                        <ul class="footer__list">
-                          <li class="footer__item"><a href="" class="footer__link">О проекте "Касса"</a></li>
-                          <li class="footer__item"><a href="" class="footer__link">Обратная связь</a></li>
-                          <li class="footer__item"><a href="" class="footer__link">Помощь</a></li>
-                          <li class="footer__item"><a href="" class="footer__link">Пользовательское соглашение</a></li>
-                        </ul>
+
+                      <div class="col-sm-2">
+                        <div class="gallery__box">
+                          <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal1big.jpg">
+                            <img src="img/gal1.jpg" alt="" class="img-responsive">
+                          </a>
+                        </div>
                       </div>
-                      <div class="col-sm-3">
-                        <div class="footer__heading">Дополнительная информация</div>
-                        <ul class="footer__list">
-                          <li class="footer__item"><a href="" class="footer__link">Возврат билетов</a></li>
-                          <li class="footer__item"><a href="" class="footer__link">Отписаться от рассылки</a></li>
-                        </ul>
+
+                      <div class="col-sm-2">
+                        <div class="gallery__box">
+                          <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal2big.jpg">
+                            <img src="img/gal2.jpg" alt="" class="img-responsive">
+                          </a>
+                        </div>
                       </div>
-                      <div class="col-sm-3">
-                        <div class="footer__heading">Мобильная касса</div>
-                        <ul class="footer__list">
-                          <li class="footer__item"><a href="" class="footer__link">Мобильная версия</a></li>
-                          <li class="footer__item"><a href="" class="footer__link">Приложение для iOS</a></li>
-                          <li class="footer__item"><a href="" class="footer__link">Приложение для Android</a></li>
-                        </ul>
+
+                      <div class="col-sm-2">
+                        <div class="gallery__box">
+                          <div class="gallery__box">
+                            <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal3big.jpg">
+                              <img src="img/gal3.jpg" alt="" class="img-responsive">
+                            </a>
+                          </div>
+                        </div>
                       </div>
-                      <div class="col-sm-3">
-                        <div class="footer__heading">Партнерам</div>
-                        <ul class="footer__list">
-                          <li class="footer__item"><a href="" class="footer__link">Кинотеатрам</a></li>
-                          <li class="footer__item"><a href="" class="footer__link">Кинопрокатчикам</a></li>
-                          <li class="footer__item"><a href="" class="footer__link">Сайтам</a></li>
-                          <li class="footer__item"><a href="" class="footer__link">Наши партнеры</a></li>
-                        </ul>
+
+                      <div class="col-sm-2">
+                        <div class="gallery__box">
+                          <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal1big.jpg">
+                            <img src="img/gal1.jpg" alt="" class="img-responsive">
+                          </a>
+                        </div>
                       </div>
-                      <div class="col-sm-12"><div class="footer__copy">Служба поддержки: +7 (495) 785-17-03, 8 800 700-29-03, <a href="mailto:kassa@rambler-co.ru">kassa@rambler-co.ru</a> © Рамблер, 2016</div></div>
-                    </div>
-                  </footer>
 
-                </article>
+                      <div class="col-sm-2">
+                        <div class="gallery__box">
+                          <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal1big.jpg">
+                            <img src="img/gal1.jpg" alt="" class="img-responsive">
+                          </a>
+                        </div>
+                      </div>
+                      
+                    </div><!-- .row -->
+                  </div><!-- /.gallery -->
+                </div> <!-- /.contact__point -->
+              </div><!-- /.contact__row -->
 
+              <div class="row contact__row">
+                <div class="col-sm-3 contact__point"><p>Как проехать</p>
+                <a data-target="#map__modal" data-toggle="modal"><img src="img/map.jpg" alt="" class="img-responsive"></a></div>
+                <div class="col-sm-3 contact__point"><p>Ближайшее метро</p><div class="contact__text">м. Проспект Вернадского</div><div class="contact__text">м. Юго-западная</div><div class="contact__text">м. Калужская</div></div>
+                <div class="col-sm-3 contact__point"><p>Парковка</p><div class="contact__text">Есть</div></div>
+              </div><!-- /.contact__row -->
 
-                <asside class="col-sm-3 sidebar">
-                 
-                </asside>
+              <div class="row contact__row">
+                <div class="col-sm-3 contact__point"><p>Телефон</p></div>
+                <div class="col-sm-9 contact__text">+7 (495) 980-44-15</div>
+              </div><!-- /.contact__row -->
 
+              <div class="row contact__row">
+                <div class="col-sm-3 contact__point"><p>Официальный сайт</p></div>
+                <div class="col-sm-9 contact__text">www.cinemastar.ru</div>
+              </div><!-- /.contact__row -->
 
+              <div class="row net__row">
+                <div class="col-sm-9"><div class="rambler-share"></div></div>
+                <div class="col-sm-3 text-right net__text"><a href="http://help.rambler.ru/feedback/kassa/">Нашли ошибку?</a></div>
+              </div><!-- /.contact__row -->
+
+              <div class="row contact__row">
+                <div class="contact__text"><p>Кинотеатр Синема Стар Рио на Ленинском проспекте расположен в торговом центре «Рио» вблизи станции метро Проспект Вернадского.</p><p>Для компании «Стар Рио» это 18 по счету мультиплекс. В нем имеется 8 залов, которые оснащены передовым цифровым оборудованием. В vip-зале создана камерная атмосфера уюта. Посетителей ждет кинопоказ повышенной комфортности: имеется бал, приветливые официанты принимают заказы. В фойе находятся три кино-бара, где можно купить различные закуски, напитки и десерты.</p><p>В кинотеатре Синема Стар Рио на Ленинском проспекте в Москве демонстрируются как популярные фильмы прошлых лет, так и современные киноленты в формате 2D и 3D. В репертуаре кинокартины на любой вкус: комедии, драмы, триллеры, мультипликация и т.д.</p><p>На сайте Киноафиша можно купить билеты в кинотеатр «Синема Стар Рио на Ленинском проспекте» онлайн. Способы online оплаты билетов — различные. Бронируйте билеты в кино на любой сеанс, не выходя из дома. </p></div>
+              </div><!-- /.contact__row -->
+
+              <div class="row contact__row">
+                <div class="col-sm-3 contact__point"><p>Часы работы</p></div>
+                <div class="col-sm-9 contact__text">10:00 - 02:00</div>
+              </div><!-- /.contact__row -->
+
+              <div class="row contact__row">
+                <div class="col-sm-3 contact__point"><p>Ночные сеансы</p></div>
+                <div class="col-sm-9 contact__text">Есть</div>
+              </div><!-- /.contact__row -->
+
+              <div class="row contact__row">
+                <div class="col-sm-3 contact__point">
+                  <p>Цена билета в кино:<br>VIP:<br>Atmos:</p>
+                </div>
+                <div class="col-sm-9 contact__text">150-400 рублей<br>
+                  300-1000 рублей<br>
+                  150-530 рублей</div>
               </div>
-            </div>
-            
 
+              <div class="row contact__row">
+                <div class="col-sm-3 contact__point"><p>Варианты оплаты</p></div>
+                <div class="col-sm-9 contact__text">Банковской картой</div>
+              </div><!-- /.contact__row -->
+            </div><!-- /.contact -->
 
-          </div>
-    
+            <div class="soon">
+              <h2 class="contact__heading">Скоро в кино</h2>
+              <div class="row">
+                <div class="col-sm-2 soon__row">
+                  <div class="soon__box">
+                    <a href="#"><img src="img/soon1.jpg" alt="" class="img-responsive soon__img"></a>
+                    <div class="soon__naming">Ледокол</div>
+                    <a href="#" class="soon__link">Купить билеты</a>
+                  </div>
+                </div><!-- /.soon__row -->
 
-   
+                <div class="col-sm-2 soon__row">
+                  <div class="soon__box">
+                    <a href="#"><img src="img/soon2.jpg" alt="" class="img-responsive soon__img"></a>
+                    <div class="soon__naming">Это всего лишь конец света</div>
+                    <a href="#" class="soon__link">Купить билеты</a>
+                  </div>
+                </div><!-- /.soon__row -->
 
-     <div class="modal fade" id="map__modal" tabindex="-1" role="dialog"  aria-hidden="true">
-        <div class="modal-dialog modal__size">
-          <div class="modal-content modal__content modal__map">
-              <button type="button" class="close modal__close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
-<iframe src="https://api-maps.yandex.ua/frame/v1/-/CZHAVQnM" width="600" height="420" frameborder="0"></iframe>
-            </div>
-          </div>
+                <div class="col-sm-2 soon__row">
+                  <div class="soon__box">
+                    <a href="#"><img src="img/soon3.jpg" alt="" class="img-responsive soon__img"></a>
+                    <div class="soon__naming">Доктор Стрэндж</div>
+                    <a href="#" class="soon__link">Купить билеты</a>
+                  </div>
+                </div><!-- /.soon__row -->
+
+                <div class="col-sm-2 soon__row">
+                  <div class="soon__box">
+                    <a href="#"><img src="img/soon4.jpg" alt="" class="img-responsive soon__img"></a>
+                    <div class="soon__naming">Джек Ричер-2: Никогда не возвращайся</div>
+                    <a href="#" class="soon__link">Купить билеты</a>
+                  </div>
+                </div><!-- /.soon__row -->
+
+                <div class="col-sm-2 soon__row">
+                  <div class="soon__box">
+                    <a href="#"><img src="img/soon5.jpg" alt="" class="img-responsive soon__img"></a>
+                    <div class="soon__naming">В постели с Викторией</div>
+                    <a href="#" class="soon__link">Купить билеты</a>
+                  </div>
+                </div><!-- /.soon__row -->
+
+                <div class="col-sm-2 soon__row">
+                  <div class="soon__box">
+                    <a href="#"><img src="img/soon6.jpg" alt="" class="img-responsive soon__img"></a>
+                    <div class="soon__naming">Тролли</div>
+                    <a href="#" class="soon__link">Купить билеты</a>
+                  </div>
+                </div><!-- /.soon__row -->
+              </div><!-- /.row -->
+
+              <div class="row contact__row">
+                <div class="col-sm-3 contact__point"><p>Кинотеатры рядом</p></div>
+                <div class="col-sm-9 contact__text">Найдите кинотеатры рядом с вами.<br>Для этого нужно разрешить браузеру определить ваше местоположение.
+                  <a href="#" class="contact__link">Определить местоположение</a>
+                </div>
+              </div><!-- /.contart__row -->
+            </div><!-- /.soon -->
+
+            <footer class="footer">
+              <div class="row">
+                <div class="col-sm-3">
+                  <div class="footer__heading">О кассе</div>
+                  <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">О проекте "Касса"</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Обратная связь</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Помощь</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Пользовательское соглашение</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <div class="footer__heading">Дополнительная информация</div>
+                  <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Возврат билетов</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Отписаться от рассылки</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <div class="footer__heading">Мобильная касса</div>
+                  <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Мобильная версия</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Приложение для iOS</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Приложение для Android</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-3">
+                  <div class="footer__heading">Партнерам</div>
+                  <ul class="footer__list">
+                    <li class="footer__item"><a href="#" class="footer__link">Кинотеатрам</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Кинопрокатчикам</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Сайтам</a></li>
+                    <li class="footer__item"><a href="#" class="footer__link">Наши партнеры</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-12"><div class="footer__copy">Служба поддержки: +7 (495) 785-17-03, 8 800 700-29-03, <a href="mailto:kassa@rambler-co.ru">kassa@rambler-co.ru</a> &copy; Рамблер, 2016</div></div>
+              </div>
+            </footer><!-- /.footer -->
+          </article><!-- /. -->
+          <asside class="col-sm-3 sidebar">
+                
+          </asside><!-- /.sidebar -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div><!-- /.wrapper -->
+
+    <div class="modal fade" id="map__modal" tabindex="-1" role="dialog"  aria-hidden="true">
+      <div class="modal-dialog modal__size">
+        <div class="modal-content modal__content modal__map">
+          <button type="button" class="close modal__close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></button>
+          <iframe src="https://api-maps.yandex.ua/frame/v1/-/CZHAVQnM" width="600" height="420" frameborder="0"></iframe>
         </div>
+      </div>
+    </div><!-- /.modal -->
 
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
+    <!-- Bootstrap JavaScript -->
+    <script src="js/bootstrap.js"></script>
 
-<script>
-(function() {
-var init = function() {
-RamblerShare.init('.rambler-share', {
-  "utm": "utm_source=social",
-  "counters": true,
-  "buttons": [
-    "vkontakte",
-    "facebook",
-    "odnoklassniki",
-    "livejournal",
-    "twitter",
-    "telegram"
-  ]
-});
-};
-var script = document.createElement('script');
-script.onload = init;
-script.async = true;
-script.src = 'https://developers.rambler.ru/likes/widget.js';
-document.head.appendChild(script);
-})();
-</script>
+    <!-- Old browsers reject JavaScript -->
+    <script src="js/jquery.reject.js"></script>
 
+    <!-- Fancybox gallery JavaScript -->
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
 
-  <!-- jQuery -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
-  <script src="js/jquery.js"></script>
-
-  <!-- Bootstrap JavaScript -->
-  <script src="js/bootstrap.min.js"></script>
-
-  <!-- Old browsers reject JavaScript -->
-  <script src="js/jquery.reject.js"></script>
-
-  <!-- Validation Form JavaScript -->
-  <script src="js/jqbootstrapvalidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Fancybox Gallery -->
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/jquery.fancybox.pack.min.js"></script>
-
-  <script src="js/TicketManager.js"></script>
-  <script src="js/schedule.js"></script>
-
-  <!-- Slick-Slider JavaScript -->
-  <script src="js/slick.js"></script>
-
-  <!-- Custom JavaScript -->
-  <script src="js/main.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
 
   </body>
-  </html>
+</html>
