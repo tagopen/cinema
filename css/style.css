@@ -320,7 +320,7 @@
 /* S L I C K - S L I D E R    T H E M E    S T Y L E  */
 /* -------------------------------------------------- */
 .slick-loading .slick-list {
-  background: #fff url('../img/ajax-loader.gif?1471293948') center center no-repeat;
+  background: #fff url('../img/ajax-loader.gif?1481557487') center center no-repeat;
 }
 
 /* Arrows */
@@ -502,70 +502,64 @@
   vertical-align: middle;
 }
 
-.ic-logo:before {
-  width: 460px;
-  height: 460px;
-  background: url('../img/icons-sdd8236b797.png') 0 -112px no-repeat;
-}
-
 .ic-subway_red:before {
   width: 21px;
   height: 21px;
-  background: url('../img/icons-sdd8236b797.png') -23px -56px no-repeat;
+  background: url('../img/icons-s5691e8bd32.png') 0 -142px no-repeat;
 }
 
 .ic-subway_orange:before {
   width: 22px;
   height: 22px;
-  background: url('../img/icons-sdd8236b797.png') -44px -56px no-repeat;
+  background: url('../img/icons-s5691e8bd32.png') 0 0 no-repeat;
 }
 
 .ic-adv1:before {
-  width: 56px;
-  height: 56px;
-  background: url('../img/icons-sdd8236b797.png') -56px 0 no-repeat;
+  width: 28px;
+  height: 28px;
+  background: url('../img/icons-s5691e8bd32.png') -13px -28px no-repeat;
 }
 
 .ic-adv2:before {
-  width: 56px;
-  height: 56px;
-  background: url('../img/icons-sdd8236b797.png') -190px -56px no-repeat;
+  width: 28px;
+  height: 28px;
+  background: url('../img/icons-s5691e8bd32.png') -28px -84px no-repeat;
 }
 
 .ic-adv3:before {
-  width: 56px;
-  height: 56px;
-  background: url('../img/icons-sdd8236b797.png') -246px -56px no-repeat;
+  width: 28px;
+  height: 28px;
+  background: url('../img/icons-s5691e8bd32.png') 0 -56px no-repeat;
 }
 
 .ic-adv4:before {
-  width: 56px;
-  height: 56px;
-  background: url('../img/icons-sdd8236b797.png') 0 0 no-repeat;
+  width: 28px;
+  height: 28px;
+  background: url('../img/icons-s5691e8bd32.png') 0 -84px no-repeat;
 }
 
 .ic-adv5:before {
-  width: 56px;
-  height: 56px;
-  background: url('../img/icons-sdd8236b797.png') -358px -56px no-repeat;
+  width: 28px;
+  height: 28px;
+  background: url('../img/icons-s5691e8bd32.png') -28px -56px no-repeat;
 }
 
 .ic-adv6:before {
-  width: 56px;
-  height: 56px;
-  background: url('../img/icons-sdd8236b797.png') -302px -56px no-repeat;
+  width: 28px;
+  height: 28px;
+  background: url('../img/icons-s5691e8bd32.png') -22px 0 no-repeat;
 }
 
 .ic-sliderright:before {
   width: 30px;
   height: 30px;
-  background: url('../img/icons-sdd8236b797.png') -96px -56px no-repeat;
+  background: url('../img/icons-s5691e8bd32.png') -10px -112px no-repeat;
 }
 
 .ic-sliderleft:before {
   width: 30px;
   height: 30px;
-  background: url('../img/icons-sdd8236b797.png') -66px -56px no-repeat;
+  background: url('../img/icons-s5691e8bd32.png') -21px -142px no-repeat;
 }
 
 /* ---------------------------------------- */
@@ -714,8 +708,8 @@ a:focus {
   text-align: center;
   font: 400 12px/14px "Open Sans", sans-serif;
 }
-.advantages__point .ic {
-  transform: scale(0.5);
+.advantages__icon {
+  margin-right: 10px;
 }
 
 /* ---------------------------------------- */

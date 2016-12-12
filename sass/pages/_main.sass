@@ -4,7 +4,7 @@
 +font('Circe-ExtraLight', 'Circe-ExtraLight')
 +font('Circe-Regular', 'Circe-Regular')
 +ic
-@each $ic in logo, subway_red, subway_orange, adv1, adv2, adv3, adv4, adv5, adv6, sliderright, sliderleft
+@each $ic in subway_red, subway_orange, adv1, adv2, adv3, adv4, adv5, adv6, sliderright, sliderleft
   .ic-#{$ic}
     +sb(#{$ic})
 +comment("home page style")
@@ -110,8 +110,8 @@ a:focus
   &__point
     text-align: center 
     font: 400 12px/14px $os
-    .ic
-      transform: scale(0.5)
+  &__icon
+    margin-right: 10px
 +comment("contact style")
 .contact
   padding-top: 15px
