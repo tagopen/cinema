@@ -140,8 +140,11 @@ a:focus
     color: #333  
     p
       margin-bottom: 15px
-    span
-      color: #006fec
+  &__link
+    color: #006fec
+    text-decoration: underline
+    &:hover
+      color: lighten(#006fec, 15%)
       text-decoration: underline
   &__link
     display: inline-block

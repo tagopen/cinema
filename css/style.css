@@ -747,8 +747,12 @@ a:focus {
 .contact__text p {
   margin-bottom: 15px;
 }
-.contact__text span {
+.contact__link {
   color: #006fec;
+  text-decoration: underline;
+}
+.contact__link:hover {
+  color: #3a96ff;
   text-decoration: underline;
 }
 .contact__link {
