@@ -679,7 +679,7 @@ a:focus {
   margin-bottom: 25px;
 }
 .address__text span {
-  font: 400 17px/18px "Open Sans", sans-serif;
+  font: 400 17px/26px "Open Sans", sans-serif;
   border-bottom: 2px dashed #333;
   margin-left: 5px;
 }
