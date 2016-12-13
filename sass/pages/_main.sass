@@ -162,6 +162,22 @@ a:focus
     text-decoration: underline
 .gallery
   margin-bottom: 15px  
+  &__col
+    width: 20%
+  &__img
+    +cover
+    height: 140px
+    display: block
+    &--1
+      background: url(../img/gal1.jpg) no-repeat  
+    &--2
+      background: url(../img/gal2.jpg) no-repeat 
+    &--3
+      background: url(../img/gal3.jpg) no-repeat 
+    &--4
+      background: url(../img/gal1.jpg) no-repeat 
+    &--5  
+      background: url(../img/gal2.jpg) no-repeat 
 +comment("soon style")   
 .soon
   &__row

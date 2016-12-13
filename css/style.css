@@ -776,6 +776,34 @@ a:focus {
 .gallery {
   margin-bottom: 15px;
 }
+.gallery__col {
+  width: 20%;
+}
+.gallery__img {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 140px;
+  display: block;
+}
+.gallery__img--1 {
+  background: url(../img/gal1.jpg) no-repeat;
+}
+.gallery__img--2 {
+  background: url(../img/gal2.jpg) no-repeat;
+}
+.gallery__img--3 {
+  background: url(../img/gal3.jpg) no-repeat;
+}
+.gallery__img--4 {
+  background: url(../img/gal1.jpg) no-repeat;
+}
+.gallery__img--5 {
+  background: url(../img/gal2.jpg) no-repeat;
+}
 
 /* ---------------------------------------- */
 /* S O O N    S T Y L E                     */
