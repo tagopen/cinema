@@ -2155,6 +2155,10 @@
   margin: 0;
 }
 
+.rasp {
+  margin-bottom: 15px;
+}
+
 .rasp_names {
   white-space: nowrap;
   margin: 0 160px 0 222px;

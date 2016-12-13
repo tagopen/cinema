@@ -702,11 +702,10 @@ a:focus {
 
 .advantages {
   background-color: #f1f1f1;
-  padding: 35px 0;
+  padding: 35px 15px;
   margin: 0 -15px 40px -45px;
 }
 .advantages__point {
-  text-align: center;
   font: 400 12px/14px "Open Sans", sans-serif;
 }
 .advantages__icon {
@@ -885,7 +884,9 @@ a:focus {
     padding: 15px 0;
   }
   .advantages__point {
+    padding: 3px 0;
     text-align: left;
+    font-size: 10px;
   }
   .advantages__point .ic {
     transform: none;
