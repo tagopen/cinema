@@ -3309,11 +3309,12 @@ $url_21: url('data:application/font-sfntcharset=utf-8base64,AAEAAAARAQAABAAQRkZU
 .date_item 
   position: relative
   float: left
-  margin: 0 -1px 0 0
+  margin: 0
   display: none !important
   &.date_calendar 
     display: block!important
     width: 23%
+    margin-left: -1px
   &.active
     display: block!important
   &:hover 
@@ -3396,7 +3397,7 @@ $url_21: url('data:application/font-sfntcharset=utf-8base64,AAEAAAARAQAABAAQRkZU
   width: 72px
   padding: 0
   height: 63px
-  border: 1px solid $color_alto_approx
+  box-shadow: 0 0 0 1px $color_alto_approx
   border-bottom: none
   cursor: pointer
   &:before 
@@ -3502,7 +3503,7 @@ $url_21: url('data:application/font-sfntcharset=utf-8base64,AAEAAAARAQAABAAQRkZU
 
 .rasp_filter_r 
   float: right
-  width: 224px
+  width: 100%
   margin: 3px 2px
 
 .filter__checkbox 
@@ -3618,7 +3619,7 @@ $url_21: url('data:application/font-sfntcharset=utf-8base64,AAEAAAARAQAABAAQRkZU
 
 .rasp_name 
   float: left
-  width: 272px
+  width: 100%
   margin: 0 0 18px
 
 .rasp_name4 

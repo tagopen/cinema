@@ -2751,12 +2751,13 @@
 .date_item {
   position: relative;
   float: left;
-  margin: 0 -1px 0 0;
+  margin: 0;
   display: none !important;
 }
 .date_item.date_calendar {
   display: block !important;
   width: 23%;
+  margin-left: -1px;
 }
 .date_item.active {
   display: block !important;
@@ -2848,7 +2849,7 @@
   width: 72px;
   padding: 0;
   height: 63px;
-  border: 1px solid #d9d9d9;
+  box-shadow: 0 0 0 1px #d9d9d9;
   border-bottom: none;
   cursor: pointer;
 }
@@ -2952,7 +2953,7 @@
 
 .rasp_filter_r {
   float: right;
-  width: 224px;
+  width: 100%;
   margin: 3px 2px;
 }
 
@@ -3077,7 +3078,7 @@
 
 .rasp_name {
   float: left;
-  width: 272px;
+  width: 100%;
   margin: 0 0 18px;
 }
 
