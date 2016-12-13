@@ -749,18 +749,13 @@ a:focus {
   margin-bottom: 15px;
 }
 .contact__link {
+  display: inline-block;
   color: #006fec;
   text-decoration: underline;
+  font: 400 14px/16px "Open Sans", sans-serif;
 }
 .contact__link:hover {
   color: #3a96ff;
-  text-decoration: underline;
-}
-.contact__link {
-  display: inline-block;
-  margin-top: 20px;
-  font: 400 14px/16px "Open Sans", sans-serif;
-  color: #006fec;
   text-decoration: underline;
 }
 
