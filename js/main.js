@@ -57,7 +57,7 @@ $(document).ready(function() {
   $("a.fancyimage").fancybox(); 
 }); 
 
-/*$('.gallery__slider').slick({
+$('.gallery__slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   dots: false,
@@ -67,7 +67,7 @@ $(document).ready(function() {
   focusOnSelect: true,
   prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="ic ic-sliderleft"></button>',
   nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="ic ic-sliderright"></button>'
-});*/
+});
 
 (function () {
   var redirectUrl = "";
