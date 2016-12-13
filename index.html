@@ -40,9 +40,11 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Fancybox CSS -->
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/schedule.css">
+    <!-- Rambler Kassa CSS -->
+    <link rel='stylesheet' href='css/Rambler.Kassa.css' />
     <!-- Custom CSS  -->
     <link rel="stylesheet" href="css/style.css">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -70,15 +72,13 @@
                       <img src="img/logo/logo2.png" alt="">
                     </a>
                   </div>
-                  <div class="pull-right header__city city">
-                    <div class="btn-group">
-                      <button class="btn header__btn dropdown-toggle" data-toggle="dropdown">Москва<span class="caret"></span></button>
-                      <ul class="dropdown-menu header__dropdown">
-                        <li><a href="#">Действие</a></li>
-                        <li><a href="#">Другое действие</a></li>
-                        <li><a href="#">Еще и еще</a></li>
-                      </ul>
-                    </div>
+                  <div class="col-sm-3 col-sm-offset-1 pull-right header__city city">
+                    <button class="header__btn dropdown-toggle" data-toggle="dropdown">Москва<span class="caret"></span></button>
+                    <ul class="dropdown-menu header__dropdown">
+                      <li><a href="#">Действие</a></li>
+                      <li><a href="#">Другое действие</a></li>
+                      <li><a href="#">Еще и еще</a></li>
+                    </ul>
                   </div>
                 </div><!-- /.row -->
               </nav><!-- /.navbar -->
@@ -88,7 +88,9 @@
                   <div class="col-sm-8 col-md-7">
                     <h1 class="header__heading"><span>Кинотеатр</span> Синема Стар Рио на Ленинском</h1>
                   </div>
-                  <div class="header__price">150-1000 Р</div>
+                  <div class="col-sm-3 col-sm-offset-2">
+                    <div class="header__price">150-1000 Р</div>
+                  </div>
                 </div>
               </div><!-- /.info -->
 
@@ -167,7 +169,7 @@
                       <div class="col-sm-2">
                         <div class="gallery__box">
                           <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal1big.jpg">
-                            <img src="img/gal1.jpg" alt="" class="img-responsive">
+                            <img src="img/gal1big.jpg" alt="Галлерея 1" class="img-responsive">
                           </a>
                         </div>
                       </div>
@@ -175,7 +177,7 @@
                       <div class="col-sm-2">
                         <div class="gallery__box">
                           <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal2big.jpg">
-                            <img src="img/gal2.jpg" alt="" class="img-responsive">
+                            <img src="img/gal2big.jpg" alt="Галлерея 2" class="img-responsive">
                           </a>
                         </div>
                       </div>
@@ -184,7 +186,7 @@
                         <div class="gallery__box">
                           <div class="gallery__box">
                             <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal3big.jpg">
-                              <img src="img/gal3.jpg" alt="" class="img-responsive">
+                              <img src="img/gal3big.jpg" alt="Галлерея 3" class="img-responsive">
                             </a>
                           </div>
                         </div>
@@ -193,7 +195,7 @@
                       <div class="col-sm-2">
                         <div class="gallery__box">
                           <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal1big.jpg">
-                            <img src="img/gal1.jpg" alt="" class="img-responsive">
+                            <img src="img/gal1big.jpg" alt="Галлерея 4" class="img-responsive">
                           </a>
                         </div>
                       </div>
@@ -201,11 +203,11 @@
                       <div class="col-sm-2">
                         <div class="gallery__box">
                           <a class="fancyimage gallery__img" data-fancybox-group="group" href="img/gal1big.jpg">
-                            <img src="img/gal1.jpg" alt="" class="img-responsive">
+                            <img src="img/gal1big.jpg" alt="Галлерея 5" class="img-responsive">
                           </a>
                         </div>
                       </div>
-                      
+
                     </div><!-- .row -->
                   </div><!-- /.gallery -->
                 </div> <!-- /.contact__point -->
@@ -362,7 +364,621 @@
             </footer><!-- /.footer -->
           </article><!-- /. -->
           <asside class="col-sm-3 sidebar">
-                
+            <section class="s-rasp rasp" data-url="https://widget.kassa.rambler.ru/" data-key="46ee8928-f6d3-4b3b-a1a8-fda0e68cd711"
+                  data-module="Schedule"
+                  data-params="{
+                    &quot;key&quot;:&quot;46ee8928-f6d3-4b3b-a1a8-fda0e68cd711&quot;
+                    ,&quot;url&quot;:&quot;https://widget.kassa.rambler.ru/&quot;
+                  }"
+                  data-path="section/schedule"
+                >
+              <div class="rasp_h">
+                <ul class="date_list clearfix">
+                  <li class="date_item active">
+                    <a class="date_link" href="https://kassa.rambler.ru/msk/cinema/sinema-star-rio-na-akademicheskoy-1821?date=2016.12.13">
+                      <time class="date_item__time">13 декабря</time>
+                      <div class="date_item__day">Сегодня, вторник</div>
+                    </a>
+                  </li>
+                  <li class="date_item">
+                    <a class="date_link" href="https://kassa.rambler.ru/msk/cinema/sinema-star-rio-na-akademicheskoy-1821?date=2016.12.14">
+                      <time class="date_item__time">14 декабря</time>
+                      <div class="date_item__day">Завтра, среда</div>
+                    </a>
+                  </li>
+                  <li class="date_item">
+                    <a class="date_link" href="https://kassa.rambler.ru/msk/cinema/sinema-star-rio-na-akademicheskoy-1821?date=2016.12.15">
+                      <time class="date_item__time">15 декабря</time>
+                      <div class="date_item__day">Послезавтра, четверг</div>
+                    </a>
+                  </li>
+                  <li class="date_item">
+                    <a class="date_link" href="https://kassa.rambler.ru/msk/cinema/sinema-star-rio-na-akademicheskoy-1821?date=2016.12.16">
+                      <time class="date_item__time">16 декабря</time>
+                      <div class="date_item__day">пятница</div>
+                    </a>
+                  </li>
+                  <li class="date_item">
+                    <a class="date_link" href="https://kassa.rambler.ru/msk/cinema/sinema-star-rio-na-akademicheskoy-1821?date=2016.12.17">
+                      <time class="date_item__time">17 декабря</time>
+                      <div class="date_item__day">суббота</div>
+                    </a>
+                  </li>
+                  <li class="date_item">
+                    <a class="date_link" href="https://kassa.rambler.ru/msk/cinema/sinema-star-rio-na-akademicheskoy-1821?date=2016.12.18">
+                      <time class="date_item__time">18 декабря</time>
+                      <div class="date_item__day">воскресенье</div>
+                    </a>
+                  </li>
+                  <li class="date_item">
+                    <a class="date_link" href="https://kassa.rambler.ru/msk/cinema/sinema-star-rio-na-akademicheskoy-1821?date=2016.12.19">
+                      <time class="date_item__time">19 декабря</time>
+                      <div class="date_item__day">понедельник</div>
+                    </a>
+                  </li>
+                  <li class="date_item">
+                    <a class="date_link" href="https://kassa.rambler.ru/msk/cinema/sinema-star-rio-na-akademicheskoy-1821?date=2016.12.20">
+                      <time class="date_item__time">20 декабря</time>
+                      <div class="date_item__day">вторник</div>
+                    </a>
+                  </li>
+                  <li class="date_item">
+                    <a class="date_link" href="https://kassa.rambler.ru/msk/cinema/sinema-star-rio-na-akademicheskoy-1821?date=2016.12.21">
+                      <time class="date_item__time">21 декабря</time>
+                      <div class="date_item__day">среда</div>
+                    </a>
+                  </li>
+                  <li class="s-calendar date_item date_calendar"
+                  data-params="{
+                    &quot;dates&quot;:[{&quot;year&quot;:2016,&quot;month&quot;:12,&quot;dates&quot;:[13,14,15,16,17,18,19,20,21]}]
+                    ,&quot;mindate&quot;:&quot;2016-12-13&quot;
+                    ,&quot;maxdate&quot;:&quot;2016-12-21&quot;
+                    ,&quot;baseurl&quot;:&quot;/msk/cinema/sinema-star-rio-na-akademicheskoy-1821&quot;
+                    ,&quot;activedate&quot;:&quot;true&quot;
+                  }">
+                    <i class="ico ico_calendar"></i>
+                    <div class="s-picker date_picker"></div>
+                  </li>
+                </ul>
+              </div>
+              <div class="rasp_filter clearfix s-schedule-filter">
+                <div class="rasp_filter_l">
+                  <div class="filter_btn filter__checkbox" data-name="format" data-exclude-value="" data-value="0">
+                    <div class="filter_radio__text">2D 
+                      <i class="ico ico_check"></i>
+                    </div>
+                  </div>
+                  <div class="filter_btn filter__checkbox" data-name="format" data-exclude-value="" data-value="1">
+                    <div class="filter_radio__text">3D 
+                      <i class="ico ico_check"></i>
+                    </div>
+                  </div>
+                  <div class="filter_btn filter__checkbox" data-name="format" data-exclude-value="" data-value="2">
+                    <div class="filter_radio__text">IMAX 
+                      <i class="ico ico_check"></i>
+                    </div>
+                  </div>
+                  <div class="filter_btn filter__checkbox" data-name="format" data-exclude-value="" data-value="4">
+                    <div class="filter_radio__text">4DX 
+                      <i class="ico ico_check"></i>
+                    </div>
+                  </div>
+                  <div class="filter_btn filter__checkbox" data-name="format" data-exclude-value="1,4096" data-value="4097">
+                    <div class="filter_radio__text">RealD, 3D 
+                      <i class="ico ico_check"></i>
+                    </div>
+                  </div>
+                  <div class="filter_btn filter__checkbox" data-name="format" data-exclude-value="" data-value="8192">
+                    <div class="filter_radio__text">LUXE 
+                      <i class="ico ico_check"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="rasp_filter_r s-name-filter">
+                  <form class="filter_sform active" action="javascript:undefined">
+                    <fieldset class="filter_sform_in">
+                      <label class="filter_sform_label" for="filter_search">
+                        <i class="ico ico_filter_sform_label"></i>
+                        <span class="filter_sform_label__text">Поиск по фильмам</span>
+                      </label>
+                      <input type="search" class="filter_sform_inp bbox" id="filter_search" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" />
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+              <div class="rasp_items" data-active="0">
+                <div class="rasp_item">
+                  <div class="rasp_item_in">
+                    <div class="rasp_name" itemscope itemtype="http://schema.org/Movie">
+                      <div class="rasp_title">
+                        <a href="https://kassa.rambler.ru/msk/movie/67491" itemprop="url">
+                          <span itemprop="name" class="s-name">Землетрясение</span>
+                        </a>
+                      </div>
+                      <div class="rasp_place" itemprop="genre"></div>
+                      <div class="rasp_audience_movie" itemprop="typicalAgeRange">12+</div>
+                    </div>
+                    <div class="rasp_list">
+                      <div class="rasp_type">Сеансы 2D от 150 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="0">
+                        <li class="btn_rasp" 
+                                                data-session="25234709"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            11:30
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234710"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            13:45
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234712"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            19:00
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234714"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            00:00
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="rasp_item">
+                  <div class="rasp_item_in">
+                    <div class="rasp_name" itemscope itemtype="http://schema.org/Movie">
+                      <div class="rasp_title">
+                        <a href="https://kassa.rambler.ru/msk/movie/62670" itemprop="url">
+                          <span itemprop="name" class="s-name">Моана</span>
+                        </a>
+                      </div>
+                      <div class="rasp_place" itemprop="genre">Мультфильмы, Комедии</div>
+                      <div class="rasp_audience_movie" itemprop="typicalAgeRange">6+</div>
+                    </div>
+                    <div class="rasp_list">
+                      <div class="rasp_type">Сеансы 2D от 150 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="0">
+                        <li class="btn_rasp inactive">11:00</li>
+                        <li class="btn_rasp" 
+                                                data-session="25234704"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            13:25
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234705"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            15:50
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234706"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            18:15
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                      <div class="rasp_type">Сеансы 3D от 250 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="1">
+                        <li class="btn_rasp" 
+                                                data-session="25234697"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            11:40
+                                                
+                          <meta itemprop="lowPrice" content="250" />
+                          <meta itemprop="highPrice" content="250" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234698"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            14:10
+                                                
+                          <meta itemprop="lowPrice" content="250" />
+                          <meta itemprop="highPrice" content="250" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234699"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            16:40
+                                                
+                          <meta itemprop="lowPrice" content="250" />
+                          <meta itemprop="highPrice" content="250" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                      <div class="rasp_type">Сеансы 3D, Dolby Atmos от 250 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="2049">
+                        <li class="btn_rasp inactive">10:10</li>
+                        <li class="btn_rasp" 
+                                                data-session="25234692"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            12:35
+                                                
+                          <meta itemprop="lowPrice" content="250" />
+                          <meta itemprop="highPrice" content="250" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234693"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            15:00
+                                                
+                          <meta itemprop="lowPrice" content="250" />
+                          <meta itemprop="highPrice" content="250" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234694"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            17:30
+                                                
+                          <meta itemprop="lowPrice" content="250" />
+                          <meta itemprop="highPrice" content="250" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="rasp_item">
+                  <div class="rasp_item_in">
+                    <div class="rasp_name" itemscope itemtype="http://schema.org/Movie">
+                      <div class="rasp_title">
+                        <a href="https://kassa.rambler.ru/msk/movie/89917" itemprop="url">
+                          <span itemprop="name" class="s-name">Новогодний корпоратив</span>
+                        </a>
+                      </div>
+                      <div class="rasp_place" itemprop="genre">Комедии</div>
+                      <div class="rasp_audience_movie" itemprop="typicalAgeRange">18+</div>
+                    </div>
+                    <div class="rasp_list">
+                      <div class="rasp_type">Сеансы 2D от 150 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="0">
+                        <li class="btn_rasp inactive">10:50</li>
+                        <li class="btn_rasp" 
+                                                data-session="25234717"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            15:40
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234700"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            19:10
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234719"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            20:20
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234701"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            21:20
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234702"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            23:30
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="rasp_item">
+                  <div class="rasp_item_in">
+                    <div class="rasp_name" itemscope itemtype="http://schema.org/Movie">
+                      <div class="rasp_title">
+                        <a href="https://kassa.rambler.ru/msk/movie/89569" itemprop="url">
+                          <span itemprop="name" class="s-name">Одиссея</span>
+                        </a>
+                      </div>
+                      <div class="rasp_place" itemprop="genre">Приключенческие фильмы</div>
+                      <div class="rasp_audience_movie" itemprop="typicalAgeRange">16+</div>
+                    </div>
+                    <div class="rasp_list">
+                      <div class="rasp_type">Сеансы 2D от 150 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="0">
+                        <li class="btn_rasp" 
+                                                data-session="25262119"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            11:50
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="rasp_item">
+                  <div class="rasp_item_in">
+                    <div class="rasp_name" itemscope itemtype="http://schema.org/Movie">
+                      <div class="rasp_title">
+                        <a href="https://kassa.rambler.ru/msk/movie/65138" itemprop="url">
+                          <span itemprop="name" class="s-name">Союзники</span>
+                        </a>
+                      </div>
+                      <div class="rasp_place" itemprop="genre">Боевики, Триллеры, Мелодрамы</div>
+                      <div class="rasp_audience_movie" itemprop="typicalAgeRange">18+</div>
+                    </div>
+                    <div class="rasp_list">
+                      <div class="rasp_type">Сеансы 2D от 150 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="0">
+                        <li class="btn_rasp" 
+                                                data-session="25234716"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            13:05
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234718"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            17:50
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234707"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            20:45
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234708"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            23:20
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="rasp_item">
+                  <div class="rasp_item_in">
+                    <div class="rasp_name" itemscope itemtype="http://schema.org/Movie">
+                      <div class="rasp_title">
+                        <a href="https://kassa.rambler.ru/msk/movie/65545" itemprop="url">
+                          <span itemprop="name" class="s-name">Под покровом ночи</span>
+                        </a>
+                      </div>
+                      <div class="rasp_place" itemprop="genre">Триллеры</div>
+                      <div class="rasp_audience_movie" itemprop="typicalAgeRange">18+</div>
+                    </div>
+                    <div class="rasp_list">
+                      <div class="rasp_type">Сеансы 2D от 150 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="0">
+                        <li class="btn_rasp" 
+                                                data-session="25234722"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            14:25
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234724"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            19:20
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="rasp_item">
+                  <div class="rasp_item_in">
+                    <div class="rasp_name" itemscope itemtype="http://schema.org/Movie">
+                      <div class="rasp_title">
+                        <a href="https://kassa.rambler.ru/msk/movie/62017" itemprop="url">
+                          <span itemprop="name" class="s-name">Фантастические твари и где они обитают</span>
+                        </a>
+                      </div>
+                      <div class="rasp_place" itemprop="genre">Фэнтези</div>
+                      <div class="rasp_audience_movie" itemprop="typicalAgeRange">12+</div>
+                    </div>
+                    <div class="rasp_list">
+                      <div class="rasp_type">Сеансы 2D от 150 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="0">
+                        <li class="btn_rasp" 
+                                                data-session="25234711"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            16:05
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234713"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            21:10
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                      <div class="rasp_type">Сеансы 3D, Dolby Atmos от 250 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="2049">
+                        <li class="btn_rasp" 
+                                                data-session="25234695"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            20:00
+                                                
+                          <meta itemprop="lowPrice" content="250" />
+                          <meta itemprop="highPrice" content="250" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234696"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            22:50
+                                                
+                          <meta itemprop="lowPrice" content="250" />
+                          <meta itemprop="highPrice" content="250" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="rasp_item">
+                  <div class="rasp_item_in">
+                    <div class="rasp_name" itemscope itemtype="http://schema.org/Movie">
+                      <div class="rasp_title">
+                        <a href="https://kassa.rambler.ru/msk/movie/65887" itemprop="url">
+                          <span itemprop="name" class="s-name">28 панфиловцев</span>
+                        </a>
+                      </div>
+                      <div class="rasp_place" itemprop="genre"></div>
+                      <div class="rasp_audience_movie" itemprop="typicalAgeRange">12+</div>
+                    </div>
+                    <div class="rasp_list">
+                      <div class="rasp_type">Сеансы 2D от 150 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="0">
+                        <li class="btn_rasp" 
+                                                data-session="25234723"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            16:50
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                        <li class="btn_rasp" 
+                                                data-session="25234725"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            21:45
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="rasp_item">
+                  <div class="rasp_item_in">
+                    <div class="rasp_name" itemscope itemtype="http://schema.org/Movie">
+                      <div class="rasp_title">
+                        <a href="https://kassa.rambler.ru/msk/movie/54879" itemprop="url">
+                          <span itemprop="name" class="s-name">Плохой Санта-2</span>
+                        </a>
+                      </div>
+                      <div class="rasp_place" itemprop="genre">Трагикомедии</div>
+                      <div class="rasp_audience_movie" itemprop="typicalAgeRange">18+</div>
+                    </div>
+                    <div class="rasp_list">
+                      <div class="rasp_type">Сеансы 2D от 150 
+                        <i class="ruble"></i>
+                      </div>
+                      <ul class="rasp_time" data-format="0">
+                        <li class="btn_rasp" 
+                                                data-session="25234720"
+                                                itemtype="http://schema.org/AggregateOffer" itemscope>
+                                            22:30
+                                                
+                          <meta itemprop="lowPrice" content="150" />
+                          <meta itemprop="highPrice" content="150" />
+                          <meta itemprop="priceCurrency" content="RUB" />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rasp_placeholder hide s-emptylist-placeholder">
+                <i class="ico ico_globe"></i>
+                <div class="rasp_placeholder_text">К сожалению, мы не нашли подходящих мероприятий</div>
+              </div>
+            </section>   
           </asside><!-- /.sidebar -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -389,6 +1005,10 @@
     <!-- Fancybox gallery JavaScript -->
     <script src="js/jquery.fancybox.js"></script>
     <script src="js/jquery.fancybox.pack.js"></script>
+    
+    <!-- Rambler.Kassa JavaScript -->
+    <script src='https://kassa.rambler.ru/s/1612082224/dist/js/vendor/start.js?v=1612082224' type='text/javascript'></script>
+    <script src='https://kassa.rambler.ru/s/1612082224/dist/js/App.js?v=1612082224'></script>
 
     <!-- Custom JavaScript -->
     <script src="js/main.js"></script>
