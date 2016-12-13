@@ -732,7 +732,7 @@ a:focus {
   background-color: #ff781a;
 }
 .contact__row {
-  margin-bottom: 15px;
+  padding-bottom: 15px;
 }
 .contact__point p {
   font: 400 12px/16px "Open Sans", sans-serif;
