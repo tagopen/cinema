@@ -57,7 +57,7 @@
       <div class="container-fluid">
         <div class="row">
 
-          <article class="col-sm-9 content">
+          <article class="col-sm-8 col-md-9 content">
             <header class="header">
 
               <nav class="navbar header__navbar">
@@ -250,7 +250,7 @@
             <div class="soon">
               <h2 class="contact__heading">Скоро в кино</h2>
               <div class="row">
-                <div class="col-sm-2 soon__row">
+                <div class="col-sm-4 col-md-2 soon__row">
                   <div class="soon__box">
                     <a href="#"><img src="img/soon1.jpg" alt="" class="img-responsive soon__img"></a>
                     <div class="soon__naming">Ледокол</div>
@@ -258,7 +258,7 @@
                   </div>
                 </div><!-- /.soon__row -->
 
-                <div class="col-sm-2 soon__row">
+                <div class="col-sm-4 col-md-2 soon__row">
                   <div class="soon__box">
                     <a href="#"><img src="img/soon2.jpg" alt="" class="img-responsive soon__img"></a>
                     <div class="soon__naming">Это всего лишь конец света</div>
@@ -266,7 +266,7 @@
                   </div>
                 </div><!-- /.soon__row -->
 
-                <div class="col-sm-2 soon__row">
+                <div class="col-sm-4 col-md-2 soon__row">
                   <div class="soon__box">
                     <a href="#"><img src="img/soon3.jpg" alt="" class="img-responsive soon__img"></a>
                     <div class="soon__naming">Доктор Стрэндж</div>
@@ -274,7 +274,7 @@
                   </div>
                 </div><!-- /.soon__row -->
 
-                <div class="col-sm-2 soon__row">
+                <div class="col-sm-4 col-md-2 soon__row">
                   <div class="soon__box">
                     <a href="#"><img src="img/soon4.jpg" alt="" class="img-responsive soon__img"></a>
                     <div class="soon__naming">Джек Ричер-2: Никогда не возвращайся</div>
@@ -282,7 +282,7 @@
                   </div>
                 </div><!-- /.soon__row -->
 
-                <div class="col-sm-2 soon__row">
+                <div class="col-sm-4 col-md-2 soon__row">
                   <div class="soon__box">
                     <a href="#"><img src="img/soon5.jpg" alt="" class="img-responsive soon__img"></a>
                     <div class="soon__naming">В постели с Викторией</div>
@@ -290,7 +290,7 @@
                   </div>
                 </div><!-- /.soon__row -->
 
-                <div class="col-sm-2 soon__row">
+                <div class="col-sm-4 col-md-2 soon__row">
                   <div class="soon__box">
                     <a href="#"><img src="img/soon6.jpg" alt="" class="img-responsive soon__img"></a>
                     <div class="soon__naming">Тролли</div>
@@ -348,7 +348,7 @@
               </div><!--/.row -->
             </footer><!-- /.footer -->
           </article><!-- /. -->
-          <asside class="col-sm-3 sidebar">
+          <asside class="col-sm-4 col-md-3 sidebar">
             <section class="s-rasp rasp" data-url="https://widget.kassa.rambler.ru/" data-key="46ee8928-f6d3-4b3b-a1a8-fda0e68cd711"
                   data-module="Schedule"
                   data-params="{
@@ -977,7 +977,29 @@
         </div>
       </div>
     </div><!-- /.modal -->
-
+    <script>
+      (function() {
+        var init = function() {
+          RamblerShare.init('.rambler-share', {
+            "utm": "utm_source=social",
+            "counters": true,
+            "buttons": [
+            "vkontakte",
+            "facebook",
+            "odnoklassniki",
+            "livejournal",
+            "twitter",
+            "telegram"
+            ]
+          });
+        };
+        var script = document.createElement('script');
+        script.onload = init;
+        script.async = true;
+        script.src = 'https://developers.rambler.ru/likes/widget.js';
+        document.head.appendChild(script);
+      })();
+    </script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
