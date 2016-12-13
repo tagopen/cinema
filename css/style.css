@@ -505,61 +505,61 @@
 .ic-subway_red:before {
   width: 21px;
   height: 21px;
-  background: url('../img/icons-s5691e8bd32.png') 0 -142px no-repeat;
+  background: url('../img/icons-s43f11ef00e.png') 0 -142px no-repeat;
 }
 
 .ic-subway_orange:before {
   width: 22px;
   height: 22px;
-  background: url('../img/icons-s5691e8bd32.png') 0 0 no-repeat;
+  background: url('../img/icons-s43f11ef00e.png') 0 0 no-repeat;
 }
 
 .ic-adv1:before {
   width: 28px;
   height: 28px;
-  background: url('../img/icons-s5691e8bd32.png') -13px -28px no-repeat;
+  background: url('../img/icons-s43f11ef00e.png') -13px -28px no-repeat;
 }
 
 .ic-adv2:before {
   width: 28px;
   height: 28px;
-  background: url('../img/icons-s5691e8bd32.png') -28px -84px no-repeat;
+  background: url('../img/icons-s43f11ef00e.png') -28px -84px no-repeat;
 }
 
 .ic-adv3:before {
   width: 28px;
   height: 28px;
-  background: url('../img/icons-s5691e8bd32.png') 0 -56px no-repeat;
+  background: url('../img/icons-s43f11ef00e.png') 0 -56px no-repeat;
 }
 
 .ic-adv4:before {
   width: 28px;
   height: 28px;
-  background: url('../img/icons-s5691e8bd32.png') 0 -84px no-repeat;
+  background: url('../img/icons-s43f11ef00e.png') 0 -84px no-repeat;
 }
 
 .ic-adv5:before {
   width: 28px;
   height: 28px;
-  background: url('../img/icons-s5691e8bd32.png') -28px -56px no-repeat;
+  background: url('../img/icons-s43f11ef00e.png') -28px -56px no-repeat;
 }
 
 .ic-adv6:before {
   width: 28px;
   height: 28px;
-  background: url('../img/icons-s5691e8bd32.png') -22px 0 no-repeat;
+  background: url('../img/icons-s43f11ef00e.png') -22px 0 no-repeat;
 }
 
 .ic-sliderright:before {
   width: 30px;
   height: 30px;
-  background: url('../img/icons-s5691e8bd32.png') -10px -112px no-repeat;
+  background: url('../img/icons-s43f11ef00e.png') -10px -112px no-repeat;
 }
 
 .ic-sliderleft:before {
   width: 30px;
   height: 30px;
-  background: url('../img/icons-s5691e8bd32.png') -21px -142px no-repeat;
+  background: url('../img/icons-s43f11ef00e.png') -21px -142px no-repeat;
 }
 
 /* ---------------------------------------- */
@@ -749,18 +749,13 @@ a:focus {
   margin-bottom: 15px;
 }
 .contact__link {
+  display: inline-block;
   color: #006fec;
   text-decoration: underline;
+  font: 400 14px/16px "Open Sans", sans-serif;
 }
 .contact__link:hover {
   color: #3a96ff;
-  text-decoration: underline;
-}
-.contact__link {
-  display: inline-block;
-  margin-top: 20px;
-  font: 400 14px/16px "Open Sans", sans-serif;
-  color: #006fec;
   text-decoration: underline;
 }
 

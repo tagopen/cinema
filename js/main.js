@@ -7,6 +7,9 @@ $(document).ready(function(){
     $('body,html').animate({scrollTop: top -$('.navbar').outerHeight()+20}, 1500);
   });
 });
+$(document).ready(function() { 
+  $("a.fancyimage").fancybox(); 
+});
 // Old browser notification
 $(function() { 
   $.reject({
@@ -52,10 +55,7 @@ $(window).on('resize', function(){
     'min-height': $('.content').height()
   });
 }).trigger('resize');
-
-$(document).ready(function() { 
-  $("a.fancyimage").fancybox(); 
-}); 
+ 
 
 $('.gallery__slider').slick({
   slidesToShow: 1,
