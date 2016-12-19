@@ -589,6 +589,17 @@ a:focus {
   outline: none;
 }
 
+.sub-heading {
+  margin: 0;
+  font: 400 12px/14px "Open Sans", sans-serif;
+  -moz-opacity: 0.9;
+  -khtml-opacity: 0.9;
+  opacity: 0.9;
+  filter: alpha(opactiy=90);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+  color: #333;
+}
+
 .content {
   padding: 0 30px 0 45px;
 }
@@ -740,18 +751,14 @@ a:focus {
 .contact__row {
   padding-bottom: 15px;
 }
-.contact__point p {
-  font: 400 12px/16px "Open Sans", sans-serif;
+.contact__point {
   color: #333;
   opacity: 0.9;
   margin-bottom: 15px;
 }
 .contact__text {
   font: 400 14px/16px "Open Sans", sans-serif;
-  color: #333;
-}
-.contact__text p {
-  margin-bottom: 15px;
+  color: #363636;
 }
 .contact__link {
   display: inline-block;
@@ -898,10 +905,6 @@ a:focus {
     transform: none;
   }
 
-  .map__point {
-    margin-bottom: 20px;
-  }
-
   /* ---------------------------------------- */
   /* L I N K S    S T Y L E                   */
   /* ---------------------------------------- */
@@ -940,6 +943,9 @@ a:focus {
     padding-left: 15px;
     padding-right: 15px;
     background-color: #f7f7f7;
+  }
+  .contact__point--map {
+    margin-bottom: 20px;
   }
 
   /* ------------------------------------------ */
