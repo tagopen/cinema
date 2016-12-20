@@ -7,7 +7,6 @@
 @each $ic in subway_red, subway_orange, adv1, adv2, adv3, adv4, adv5, adv6, sliderright, sliderleft, raspic
   .ic-#{$ic}
     +sb(#{$ic})
-+comment("home page style")
 html
   overflow-x: hidden
   height: 100%
@@ -20,15 +19,20 @@ a:focus
   color: inherit
   text-decoration: none
   outline: none
+.wrapper
+  background-color: #f7f7f7
 .sub-heading
   margin: 0
   font: 400 12px/14px 'Open Sans', sans-serif
   +opacity(0.9)
   color: #333
-  &--margin
+  &--block
     margin-bottom: 20px
-.content
-  padding: 0 30px 0 45px
++r(992)
+  .pr
+    padding-left: 45px
+    padding-right: 45px
++comment("home page style")
 .modal
   &__size--mob
     width: 300px
@@ -39,23 +43,8 @@ a:focus
       position: absolute
       right: -25px
       top: -25px  
-+comment("header style")
-.header
-  padding-top: 40px
-  &__navbar
-    margin-bottom: 40px
-  &__info
-    margin-bottom: 30px 
-  &__btn
-    padding: 15px 20px
-    width: 130px  
-    float: right
-    +br(0)
-    background-color: transparent
-    border: 1px solid #c2c2c2
-    span
-      margin-left: 25px !important
-  &__dropdown  
+.dropdown
+  &-menu 
     padding-top: 0
     padding-bottom: 0
     margin: 0
@@ -63,22 +52,40 @@ a:focus
     li
       a
         &:hover
-          background-color: #ff781a
-  &__heading
+          background-color: #ff781a 
+  &-toggle
+    padding: 20px 17px
+    width: 130px  
+    float: right
+    +br(0)
+    background-color: transparent
+    border: 1px solid #c2c2c2
+    font: 700 14px/18px $os
+    .fa
+      margin-left: 25px !important
+.heading
+  font: 600 34px/34px $cel
+  color: #333
+  letter-spacing: 1px
+  margin: 0
+  &--line
+    &:before
+      display: inline-block
+      content: ''
+      margin: 0 5px 0 -7px
+      width: 2px
+      height: 24px
+      background-color: #ff781a
+  &--bold
     font: 400 34px/36px $cb
-    color: #333
-    letter-spacing: 1px
-    margin: 0
-    span
-      font: 600 34px/34px $cel
-      margin-right: 15px
-      &:before
-        display: inline-block
-        content: ''
-        margin: 0 5px 0 -7px
-        width: 2px
-        height: 24px
-        background-color: #ff781a
++comment("header style")
+.header
+  padding-top: 27px
+  background-color: #fff
+  &__navbar
+    margin-bottom: 40px
++comment('section notification style')
+.notification
   &__price    
     background-color: #ff781a
     +br(23px)
@@ -90,16 +97,19 @@ a:focus
     font: 400 20px/22px $cb
     text-transform: uppercase
     margin-top: 15px
++comment('section address style')
 .address
   margin-bottom: 35px
   &__text
     font: 400 14px/16px $os
     color: #333
     margin-bottom: 25px
-    span 
-      font: 400 17px/26px $os  
-      border-bottom: 2px dashed #333
-      margin-left: 5px
+  &__link 
+    font: 400 17px/26px $os  
+    border-bottom: 2px dashed #333
+    margin-left: 5px
++comment('underground style')
+.underground
   &__point
     display: inline-block
     background-color: #f3f3f3
@@ -109,93 +119,182 @@ a:focus
     color: #282828 
     margin-right: 15px
     margin-bottom: 10px
-    .ic
-      margin-right: 9px
-.advantages
+  &__icon
+    margin-right: 9px
++comment('section advantage style')
+.advantage
   background-color: #f1f1f1
-  padding: 35px 15px   
-  margin: 0 -30px 40px -45px
+  padding: 35px 50px   
+  margin: 0 -45px
+  &__col
+    padding-left: 10px
+    padding-right: 10px
   &__point
-    font: 400 12px/14px $os
+    margin: 5px 0
+  &__text
+    font: 400 11px/14px $os
   &__icon
     margin-right: 10px
-+comment("contact style")
-.contact
-  padding-top: 15px
-  &__heading
-    color: #333
-    font: 400 24px/26px $os
-    margin: 0 0 30px
-    &--line
-      &:before
-        display: inline-block
-        content: ''
-        margin: 0 5px 0 -7px
-        width: 2px
-        height: 18px
-        background-color: #ff781a
-  &__row
-    padding-bottom: 15px
-  &__point
-    color: #333
-    opacity: 0.9  
-    margin-bottom: 15px 
-  &__text
-    font: 400 14px/16px $os
-    color: #363636
++rx(768)
+.advantage
+  margin: 0 -15px
+  padding: 15px
++comment("section m-navbar style")
+.m-navbar
+  margin: 0 -15px
+  &__list
+    display: table-row
+  &__item
+    width: auto
+    display: table-cell
+    text-align: center
+    padding-left: 2px
+    border-left: 1px solid #000
+    vertical-align: bottom
+    background-color: #282828
   &__link
-    display: inline-block
-    color: #006fec
+    padding: 15px 0
+    width: 1000px
+    display: table-cell
+    vertical-align: middle
+    color: #fff    
+    &:hover,
+    &:focus
+      color: #d55b1f
++comment("section sidebar style")
+.sidebar
+  float: right
+  background-color: #f6f6f6
++comment("section contant style")
+.contant
+  padding-top: 42px 
+  padding-bottom: 24px
+  background-color: #fff
++rx(768)
+  .contant
+    padding-top: 0
++comment("section contact style")
+.contact
+  &__heading
+    margin-bottom: 30px
+    font: 400 24px/26px $os
+    color: #333
+.info
+  margin-top: 21px
+  margin-bottom: 21px
+  &__heading
+
+  &__body
+    font: 600 15px/20px $os
+    color: #333
+  &__text
+    font: 400 15px/20px $os
+    color: #333
+  &__link
+    font: 400 15px/16px $os
+    color: #0087dc
     text-decoration: underline
-    font: 400 14px/16px $os
-    &:hover
-      color: lighten(#006fec, 15%)
-      text-decoration: underline
+    &:hover,
+    &:focus
+      color: lighten(#0087dc, 15%)
+      text-decoration: underline  
+    &--geo
+      display: block
+      margin-top: 20px
 .list
   &__item
-    display: inline-block
+    position: relative
+    margin-right: 20px
+    float: left
+
+    &:last-of-type
+      &:before
+        content: none
+    &:before
+      content: '>'
+      position: absolute
+      margin-left: 5px
+      margin-right: 5px
+      left: 100%
+  &__link
+    font: 600 14px/16px $os
     color: #006fec
-    text-decoration: underline      
-.net
-  &__row
-    margin-bottom: 40px
-  &__text
-    color: #ed812b
-    font: 400 14px/16px $os
     text-decoration: underline
+    &:hover,
+    &:focus
+      color: lighten(#006fec, 15%)
+      text-decoration: underline  
+    &--unstyled
+      text-decoration: none
+      color: #333
+      cursor: default
+      &:hover
+        color: #333
+        text-decoration: none     
++comment("section gallery style")
 .gallery
-  margin-bottom: 15px  
+  margin-bottom: 15pxbig
   &__col
     width: 20%
   &__img
-    +cover
-    height: 140px
+    height: 90px
     display: block
+    +cover
     &--1
-      background: url(../img/gal1.jpg) no-repeat  
+      background: transparent url(../img/gal1big.jpg) no-repeat no-repeat scroll 0 0
+      +cover
     &--2
-      background: url(../img/gal2.jpg) no-repeat 
+      background: transparent url(../img/gal2big.jpg) no-repeat no-repeat scroll 0 0
+      +cover
     &--3
-      background: url(../img/gal3.jpg) no-repeat 
+      background: transparent url(../img/gal3big.jpg) no-repeat no-repeat scroll 0 0
+      +cover
     &--4
-      background: url(../img/gal1.jpg) no-repeat 
+      background: transparent url(../img/gal1big.jpg) no-repeat no-repeat scroll 0 0
+      +cover
     &--5  
-      background: url(../img/gal2.jpg) no-repeat 
-+comment("soon style")   
+      background: transparent url(../img/gal2big.jpg) no-repeat no-repeat scroll 0 0
+      +cover
+//.net
+//  &__row
+//    margin-bottom: 40px
+//  &__text
+//    color: #ed812b
+//    font: 400 14px/16px $os
+//    text-decoration: underline
++comment("section soon style")   
 .soon
-  &__row
+  &__heading
     margin-bottom: 20px
+    font: 400 24px/28px $os  
+    color: #323232
+  &__row
+    margin-left: -7px
+    margin-right: -8px
+  &__col
+    padding-left: 7px
+    padding-right: 8px
+    margin-bottom: 20px
+.product
   &__img
     margin-bottom: 10px
-  &__naming
+  &__name
     margin-bottom: 15px
-  &__link
-    background-color: #00acdc  
-    color: #fff
-    display: inline-block
+  &__btn
+    display: block
+    padding: 9px 18px
     width: 100%
+    +br(5px)
+    background-color: #00acdc
+    font: 400 14px/16px $os  
+    color: #fff
+    +text-shadow(4px 4px 2px rgba(150, 150, 150, 1))
     text-align: center
     text-transform: uppercase
+    &:hover,
+    &:focus
+      color: #fff
+      text-decoration: none
 +comment("footer style")    
 .footer
   padding: 120px 0
@@ -216,5 +315,3 @@ a:focus
     color: #666
     a
       color: #00acdc
-.sidebar
-  background-color: #f6f6f6

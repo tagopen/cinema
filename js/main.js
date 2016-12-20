@@ -46,9 +46,9 @@ $.fn.equialHeight = function() {
 
 $(window).on('resize', function(){
   if( $( window ).width() >= 768 ) {
-    $('.soon__box').equialHeight();
-    $('.soon__box img').equialHeight();
-    $('.soon__naming').equialHeight();
+    $('.product').equialHeight();
+    $('.product__img').equialHeight();
+    $('.product__name').equialHeight();
     $('.footer__heading').equialHeight();
   }
   $('.sidebar').css({
