@@ -770,11 +770,12 @@ a:focus {
   margin-right: 10px;
 }
 
-.advantage {
-  margin: 0 -15px;
-  padding: 15px;
+@media only screen and (max-width: 767px) {
+  .advantage {
+    margin: 0 -15px;
+    padding: 15px;
+  }
 }
-
 /* ---------------------------------------------- */
 /* S E C T I O N    M - N A V B A R    S T Y L E  */
 /* ---------------------------------------------- */
