@@ -57,16 +57,24 @@ $(window).on('resize', function(){
 }).trigger('resize');
  
 
-$('.gallery__slider').slick({
-  slidesToShow: 1,
-  slidesToScroll: 1,
+$('.gallery').slick({
+  slidesToShow: 5,
+  slidesToScroll: 0,
   dots: false,
-  arrows: true,
-  centerPadding: '10',
-  centerMode: true,
-  focusOnSelect: true,
+  arrows: false,
   prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button"><i class="ic ic-sliderleft"></button>',
-  nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="ic ic-sliderright"></button>'
+  nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button"><i class="ic ic-sliderright"></button>',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        focusOnSelect: true
+      }
+    }
+  ]
 });
 
 (function () {

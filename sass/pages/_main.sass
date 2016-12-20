@@ -78,12 +78,19 @@ a:focus
       background-color: #ff781a
   &--bold
     font: 400 34px/36px $cb
++rx(767)
+  .heading
+    margin-bottom: 20px
 +comment("header style")
 .header
   padding-top: 27px
   background-color: #fff
   &__navbar
     margin-bottom: 40px
++rx(767)
+  .header
+    &__navbar
+      margin-bottom: 0
 +comment('section notification style')
 .notification
   &__price    
@@ -135,7 +142,7 @@ a:focus
     font: 400 11px/14px $os
   &__icon
     margin-right: 10px
-+rx(768)
++rx(767)
 .advantage
   margin: 0 -15px
   padding: 15px
@@ -163,30 +170,39 @@ a:focus
       color: #d55b1f
 +comment("section sidebar style")
 .sidebar
-  float: right
   background-color: #f6f6f6
++rx(767)
+  .rasp__heading
+    margin-top: 23px
 +comment("section contant style")
 .contant
   padding-top: 42px 
   padding-bottom: 24px
   background-color: #fff
-+rx(768)
++rx(767)
   .contant
     padding-top: 0
+    padding-bottom: 0
+    background-color: transparent
 +comment("section contact style")
 .contact
   &__heading
     margin-bottom: 30px
     font: 400 24px/26px $os
     color: #333
++rx(767)
+  .contact
+    padding-top: 15px
+    padding-bottom: 15px
 .info
   margin-top: 21px
   margin-bottom: 21px
-  &__heading
-
   &__body
     font: 600 15px/20px $os
     color: #333
+    &--clossest
+      font: 400 12px/16px $os
+      color: #363636
   &__text
     font: 400 15px/20px $os
     color: #333
@@ -201,6 +217,22 @@ a:focus
     &--geo
       display: block
       margin-top: 20px
+    &--clossest
+      font: 400 18px/21px $os
+      color: #3e6fe8
+  &__map
+    display: block
+    height: 156px
+    background: transparent url(../img/map.jpg) no-repeat scroll bottom center
++rx(767)
+  .info
+    margin-top: 12px
+    margin-bottom: 12px
+    &__heading
+      margin-bottom: 10px
+    &__map
+      margin-left: -15px
+      margin-right: -15px
 .list
   &__item
     position: relative
@@ -233,9 +265,11 @@ a:focus
         text-decoration: none     
 +comment("section gallery style")
 .gallery
-  margin-bottom: 15pxbig
+  margin: 0 8px 15px 7px
   &__col
     width: 20%
+    padding-left: 7px
+    padding-right: 8px
   &__img
     height: 90px
     display: block
@@ -255,13 +289,26 @@ a:focus
     &--5  
       background: transparent url(../img/gal2big.jpg) no-repeat no-repeat scroll 0 0
       +cover
-//.net
-//  &__row
-//    margin-bottom: 40px
-//  &__text
-//    color: #ed812b
-//    font: 400 14px/16px $os
-//    text-decoration: underline
++rx(767)
+  .gallery
+    margin: 0 0 15px 0
+    &__col
+      padding: 0
+    &__img
+      height: 220px
++comment("section clossest style") 
+.clossest
+  position: relative
+  margin-left: -15px
+  margin-right: -15px
+  padding: 27px 20px
+  background-color: #fff
+  &__icon
+    position: absolute
+    margin: 28px 20px
+    top: 0
+    right: 0
+    opacity: .2
 +comment("section soon style")   
 .soon
   &__heading
@@ -299,9 +346,11 @@ a:focus
 .footer
   padding: 120px 0
   &__heading
+    margin-bottom: 15px
     font: 400 14px/16px $os
     color: #333
-    margin-bottom: 15px
+    +opacity(0.45)
+    text-transform: uppercase
   &__list
     padding-left: 0
     list-style-type: none 
@@ -309,9 +358,27 @@ a:focus
     font: 400 14px/16px $os
     color: #666
     margin-bottom: 8px
+  &__link
+    &:hover,
+    &:focus
+      color: #f0641b
   &__copy
     padding-top: 40px  
     font: 400 14px/16px $os
     color: #666
     a
       color: #00acdc
++rx(767)
+  .footer
+    background-color: #f7f7f7
+    position: relative
+    margin: 0 -15px
+    padding: 35px 15px 30px  
+    &__city
+      position: absolute
+      right: 15px
+      z-index: 25 
+
+
+
+
